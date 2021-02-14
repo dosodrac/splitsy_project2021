@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@null">
+
+    <TextView
+        android:id="@+id/enableFingerprintText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enable Fingerprint"
+        android:textColor="@color/logoGreen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/contentText"
+        android:layout_width="283dp"
+        android:layout_height="56dp"
+        android:text="Give Splitisy permission to unlock this app using the fingerprint sensor."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.296"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enableFingerprintText"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/fingerPrintImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contentText"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/ic_baseline_fingerprint" />
+
+    <CheckBox
+        android:id="@+id/permissionCB"
+        android:layout_width="330dp"
+        android:layout_height="72dp"
+        android:backgroundTint="@color/logoGreen"
+        android:buttonTint="@color/logoGreen"
+        android:text="I give permission for the use of my fingerprint for login purposes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fingerPrintImage"
+        app:layout_constraintVertical_bias="0.234" />
+
+    <Button
+        android:id="@+id/denyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:stateListAnimator="@null"
+        android:text="DENY"
+        android:textColor="@color/logoGreen"
+        android:textSize="20sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/permissionCB"
+        app:layout_constraintVertical_bias="0.545"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
