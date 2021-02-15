@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_pastBills"
+        android:icon="@drawable/ic_outline_pastbills"
+        android:title="Past Bills"
+        />
+
+    <item
+        android:id="@+id/nav_newBill"
+        android:icon="@drawable/ic_outline_newbill"
+        android:title="New Bill"
+        />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_outline_account"
+        android:title="Account"
+        />
+</menu>

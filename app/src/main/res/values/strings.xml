@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="account_details">Account Details</string>
+    <string name="nickname">Nickname</string>
+    <string name="this_is_the_name_others_will_see">This is the name others will see.</string>
+    <string name="continue_button">Continue</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="i_agree_to_the_terms_of_service_and_privacy_policy">I agree to the Terms of Service and Privacy Policy.</string>
+    <string name="sign_in">Sign In</string>
+    <string name="todo">TODO</string>
+    <string name="have_an_account">Have an account?</string>
+=    <string name="hi_there">Hi there!</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="enable_fingerprint">Enable Fingerprint</string>
+    <string name="give_splitisy_permission_to_unlock_this_app_using_the_fingerprint_sensor">Give Splitisy permission to unlock this app using the fingerprint sensor.</string>
+    <string name="deny">DENY</string>
+    <string name="i_give_permission_for_the_use_of_my_fingerprint_for_login_purposes">I give permission for the use of my fingerprint for login purposes</string>
+    <string name="enter_card_details">Enter Card Details</string>
+    <string name="name_on_card">Name On Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="this_is_the_last_three_digits_on_the_back_of_your_card">This is the last three digits on the back of your card.</string>
+    <string name="finish">Finish</string>
+=    <string name="mm_yy">MM/YY</string>
+    <string name="please_enter_your_email_address_to_reset_your_password">Please enter your email address to reset your password:</string>
+    <string name="submit">Submit</string>
 </resources>

@@ -10,7 +10,7 @@
         android:id="@+id/enableFingerprintText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enable Fingerprint"
+        android:text="@string/enable_fingerprint"
         android:textColor="@color/logoGreen"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -25,7 +25,7 @@
         android:id="@+id/contentText"
         android:layout_width="283dp"
         android:layout_height="56dp"
-        android:text="Give Splitisy permission to unlock this app using the fingerprint sensor."
+        android:text="@string/give_splitisy_permission_to_unlock_this_app_using_the_fingerprint_sensor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.296"
@@ -43,7 +43,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contentText"
         app:layout_constraintVertical_bias="0.426"
-        app:srcCompat="@drawable/ic_baseline_fingerprint" />
+        app:srcCompat="@drawable/ic_baseline_fingerprint"
+        android:contentDescription="@string/todo" />
 
     <CheckBox
         android:id="@+id/permissionCB"
@@ -51,7 +52,7 @@
         android:layout_height="72dp"
         android:backgroundTint="@color/logoGreen"
         android:buttonTint="@color/logoGreen"
-        android:text="I give permission for the use of my fingerprint for login purposes"
+        android:text="@string/i_give_permission_for_the_use_of_my_fingerprint_for_login_purposes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
@@ -65,7 +66,7 @@
         android:layout_height="wrap_content"
         android:background="#FFFFFF"
         android:stateListAnimator="@null"
-        android:text="DENY"
+        android:text="@string/deny"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:backgroundTint="@null"
