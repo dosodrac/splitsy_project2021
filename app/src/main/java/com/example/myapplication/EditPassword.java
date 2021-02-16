@@ -2,28 +2,31 @@ package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
-    Button pro;
+public class EditPassword extends AppCompatActivity {
+    Button btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_edit_password);
 
-        pro=findViewById(R.id.pro);
+        btn=findViewById(R.id.btn);
 
-        pro.setOnClickListener(new View.OnClickListener() {
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(MainActivity.this, Account.class);
-                startActivity(intent);
+                Toast.makeText(EditPassword.this,"Please check your email",Toast.LENGTH_LONG).show();
+
             }
         });
+
+
 
     }
 }
