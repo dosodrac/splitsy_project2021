@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/logoGreen"
-        app:itemIconSize="40dp"
+        app:itemIconSize="50dp"
         app:itemIconTint="@color/white"
         app:itemTextColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -21,5 +21,57 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/nav_bar"/>
+
+    <TextView
+        android:id="@+id/newBillText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/new_bill"
+        android:textColor="@color/logoGreen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <Button
+        android:id="@+id/createNewBillButton"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/ic_baseline_newbill"
+        android:text="@string/create_new_bill"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_bar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newBillText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/joinBillButton"
+        android:layout_width="212dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button"
+        android:drawableLeft="@drawable/ic_baseline_newbill"
+        android:text="@string/join_bill"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createNewBillButton"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

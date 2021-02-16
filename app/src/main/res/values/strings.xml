@@ -11,7 +11,7 @@
     <string name="sign_in">Sign In</string>
     <string name="todo">TODO</string>
     <string name="have_an_account">Have an account?</string>
-=    <string name="hi_there">Hi there!</string>
+    <string name="hi_there">Hi there!</string>
     <string name="keep_me_signed_in">Keep me signed in</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="enable_fingerprint">Enable Fingerprint</string>
@@ -25,7 +25,17 @@
     <string name="cvv">CVV</string>
     <string name="this_is_the_last_three_digits_on_the_back_of_your_card">This is the last three digits on the back of your card.</string>
     <string name="finish">Finish</string>
-=    <string name="mm_yy">MM/YY</string>
+    <string name="mm_yy">MM/YY</string>
     <string name="please_enter_your_email_address_to_reset_your_password">Please enter your email address to reset your password:</string>
     <string name="submit">Submit</string>
+    <string name="create_new_bill">Create New Bill</string>
+    <string name="new_bill">New Bill</string>
+    <string name="join_bill">Join Bill</string>
+    <string name="bill_name">Bill Name</string>
+    <string name="pay_by_day">Pay By Day</string>
+    <string name="dd_mm_yy">DD/MM/YY</string>
+    <string name="number_of_members_to_join">Number of members to join</string>
+    <string name="split_type">Split Type</string>
+    <string name="by_item">By Item</string>
+    <string name="equally">Equally</string>
 </resources>

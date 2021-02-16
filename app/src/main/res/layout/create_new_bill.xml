@@ -7,48 +7,37 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/enterCardDetailsText"
+        android:id="@+id/createNewBillText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_card_details"
+        android:text="@string/create_new_bill"
+        android:textColor="@color/logoGreen"
         android:textSize="25sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.057"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.121" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114"
-        app:srcCompat="@drawable/ic_outline_credit_card"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/nameOnCardText"
+        android:id="@+id/billNameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/name_on_card"
+        android:text="@string/bill_name"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterCardDetailsText"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintTop_toBottomOf="@+id/createNewBillText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/nameOnCardInput"
+        android:id="@+id/billNameInput"
         android:layout_width="293dp"
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
@@ -59,126 +48,135 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameOnCardText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/billNameText"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/cardNumText"
+        android:id="@+id/payByDayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/card_number"
+        android:text="@string/pay_by_day"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameOnCardInput"
+        app:layout_constraintTop_toBottomOf="@+id/billNameInput"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/cardNumInput"
-        android:layout_width="293dp"
-        android:layout_height="43dp"
-        android:background="@drawable/input_boarder"
-        android:ems="10"
-        android:inputType="number"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumText"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/expiryDateText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="@string/expiry_date"
-        android:textColor="@color/logoGreen"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.125"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardNumInput"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/expiryDateInput"
-        android:layout_width="127dp"
+        android:id="@+id/payByDayInput"
+        android:layout_width="140dp"
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
         android:drawableStart="@drawable/ic_baseline_calender"
         android:ems="10"
-        android:hint="@string/mm_yy"
-        android:inputType="date"
+        android:hint="@string/dd_mm_yy"
+        android:inputType="text|date"
         android:paddingStart="10dp"
-        android:paddingEnd="16dp"
+        android:paddingEnd="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.207"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expiryDateText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/payByDayText"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/cvvText"
+        android:id="@+id/numberOfMembersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="@string/cvv"
+        android:text="@string/number_of_members_to_join"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expiryDateInput"
+        app:layout_constraintTop_toBottomOf="@+id/payByDayInput"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/cvvInput"
-        android:layout_width="100dp"
+        android:id="@+id/numOfMembersInput"
+        android:layout_width="140dp"
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
+        android:drawableStart="@drawable/ic_baseline_people"
         android:ems="10"
-        android:inputType="date"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
+        android:inputType="number"
+        android:paddingStart="16sp"
+        android:paddingEnd="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.189"
+        app:layout_constraintHorizontal_bias="0.217"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
+        app:layout_constraintVertical_bias="0.0"
+        android:autofillHints="" />
 
     <TextView
-        android:id="@+id/cvvContent"
-        android:layout_width="203dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="36dp"
-        android:layout_marginBottom="272dp"
-        android:text="@string/this_is_the_last_three_digits_on_the_back_of_your_card"
-        android:textSize="16sp"
+        android:id="@+id/splitTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/split_type"
+        android:textColor="@color/logoGreen"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/cvvInput"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numOfMembersInput"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/finishButton"
+        android:id="@+id/byItemButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_button"
+        android:drawableLeft="@drawable/ic_outline_fork_green"
+        android:paddingLeft="10dp"
+        android:text="@string/by_item"
+        android:textAllCaps="false"
+        android:textColor="@color/logoGreen"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/equallyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/outline_button"
+        android:drawableLeft="@drawable/ic_baseline_pie_chart_green"
+        android:paddingLeft="10dp"
+        android:text="@string/equally"
+        android:textAllCaps="false"
+        android:textColor="@color/logoGreen"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toEndOf="@+id/byItemButton"
+        app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <Button
+        android:id="@+id/continueButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="@string/finish"
+        android:text="@string/continue_button"
         android:textAllCaps="false"
         android:textSize="15sp"
         app:backgroundTint="@null"
@@ -186,9 +184,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvvInput"
-        app:layout_constraintVertical_bias="0.336" />
-
-
+        app:layout_constraintTop_toBottomOf="@+id/equallyButton"
+        app:layout_constraintVertical_bias="0.191" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
