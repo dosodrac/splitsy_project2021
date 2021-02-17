@@ -26,7 +26,7 @@ public class Account extends AppCompatActivity {
     //addcard
     TextView addcard;
 
-    //navbar
+    //bottom navbar
     BottomNavigationView bottomNavigation;
 
 
@@ -35,10 +35,11 @@ public class Account extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-
+        //bottom navbar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
+        //log out btn
         logout=findViewById(R.id.logoutbtn);
 
 
@@ -77,6 +78,7 @@ public class Account extends AppCompatActivity {
 
     }
 
+    //fragment transaction
     public void openFragment(Fragment fragment) {
         FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
         transaction.replace(R.id.container, fragment);
@@ -84,6 +86,7 @@ public class Account extends AppCompatActivity {
         transaction.commit();
     }
 
+    //bottom navigation listener and switch activity
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
