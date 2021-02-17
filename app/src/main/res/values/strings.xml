@@ -51,6 +51,10 @@
     <string name="pay_later">Pay Later</string>
     <string name="pay_now">Pay Now</string>
     <string name="card_payments_will_only_be_processed_once_all_members_have_completed_selection">Card payments will only be processed once all members have completed selection.</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="on_the_next_page_give_this_app_permission_to_access_your_camera">On the next page give this app permission to access your camera.</string>
+    <string name="enter_bill_details">Enter Bill Details</string>
+    <string name="enter_bill_amount">Enter Bill Amount</string>
     <!-- Array for spinner on create new bill page -->
     <string-array name="numOfMembersArray">
         <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item>
