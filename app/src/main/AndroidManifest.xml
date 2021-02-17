@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".AddCard"></activity>
+        <activity android:name=".PastBill"></activity>
+        <activity android:name=".AddCard" />
         <activity android:name=".EditPassword" />
         <activity android:name=".Account" />
         <activity android:name=".MainActivity">
