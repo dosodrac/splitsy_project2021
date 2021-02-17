@@ -38,4 +38,25 @@
     <string name="split_type">Split Type</string>
     <string name="by_item">By Item</string>
     <string name="equally">Equally</string>
+    <string name="your_bill">Your Bill</string>
+    <string name="your_section_of_the_bill_is">Your section of the bill is</string>
+    <string name="_00_00">£00.00</string>
+    <string name="we_will_notify_you_when_you_have_been_paid_back_by_each_member">We will notify you when you have been paid back by each member</string>
+    <string name="home">Home</string>
+    <string name="view_bill_details">View Bill Details</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="please_follow_the_instructions_on_your_email_to_reset_your_password">Please follow the instructions on your email to reset your password.</string>
+    <string name="the_pay_by_date_for_this_bill_is">The pay-by date for this bill is:</string>
+    <string name="_00_00_00">00/00/00</string>
+    <string name="pay_later">Pay Later</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="card_payments_will_only_be_processed_once_all_members_have_completed_selection">Card payments will only be processed once all members have completed selection.</string>
+    <!-- Array for spinner on create new bill page -->
+    <string-array name="numOfMembersArray">
+        <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item>
+        <item>11</item><item>12</item><item>13</item><item>14</item><item>15</item><item>16</item><item>17</item><item>18</item><item>19</item><item>20</item>
+        <item>21</item><item>22</item><item>23</item><item>24</item><item>25</item><item>26</item><item>27</item><item>28</item><item>29</item><item>30</item>
+        <item>31</item><item>32</item><item>33</item><item>34</item><item>35</item><item>36</item><item>37</item><item>38</item><item>39</item><item>40</item>
+        <item>41</item><item>42</item><item>43</item><item>44</item><item>45</item><item>46</item><item>47</item><item>48</item><item>49</item><item>50</item>
+    </string-array>
 </resources>

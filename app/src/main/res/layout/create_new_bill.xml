@@ -38,8 +38,9 @@
 
     <EditText
         android:id="@+id/billNameInput"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
+        android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:ems="10"
         android:inputType="textPersonName"
@@ -47,10 +48,10 @@
         android:paddingEnd="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/billNameText"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/payByDayText"
@@ -71,6 +72,7 @@
         android:id="@+id/payByDayInput"
         android:layout_width="140dp"
         android:layout_height="43dp"
+        android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:drawableStart="@drawable/ic_baseline_calender"
         android:ems="10"
@@ -80,11 +82,10 @@
         android:paddingEnd="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/payByDayText"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/numberOfMembersText"
@@ -101,24 +102,6 @@
         app:layout_constraintTop_toBottomOf="@+id/payByDayInput"
         app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/numOfMembersInput"
-        android:layout_width="140dp"
-        android:layout_height="43dp"
-        android:background="@drawable/input_boarder"
-        android:drawableStart="@drawable/ic_baseline_people"
-        android:ems="10"
-        android:inputType="number"
-        android:paddingStart="16sp"
-        android:paddingEnd="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.217"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
-
     <TextView
         android:id="@+id/splitTypeText"
         android:layout_width="wrap_content"
@@ -129,15 +112,15 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numOfMembersInput"
+        app:layout_constraintTop_toBottomOf="@+id/numOfMembersSpinner"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/byItemButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
         android:background="@drawable/outline_button"
         android:drawableLeft="@drawable/ic_outline_fork_green"
         android:paddingLeft="10dp"
@@ -154,8 +137,8 @@
 
     <Button
         android:id="@+id/equallyButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
         android:background="@drawable/outline_button"
         android:drawableLeft="@drawable/ic_baseline_pie_chart_green"
         android:paddingLeft="10dp"
@@ -186,5 +169,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equallyButton"
         app:layout_constraintVertical_bias="0.191" />
+
+    <Spinner
+        android:id="@+id/numOfMembersSpinner"
+        android:layout_width="100dp"
+        android:layout_height="43dp"
+        android:entries="@array/numOfMembersArray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.244"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/peopleIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
+        app:layout_constraintVertical_bias="0.02"
+        app:srcCompat="@drawable/ic_baseline_people" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
