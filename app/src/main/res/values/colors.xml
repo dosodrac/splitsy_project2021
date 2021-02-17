@@ -8,5 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="logoGreen">#44AEBE</color>D
+    <color name="logoGreen">#44AEBE</color>
+    <color name="red">#FF0000</color>
+    <color name="coral">#FF7F50</color>
+    <color name="crimson">#DC143C</color>
+    <color name="dimgray">#696969</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="gray">#808080</color>
+    <color name="darkgray">#b8b8b8</color>
+
 </resources>
