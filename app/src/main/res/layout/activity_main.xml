@@ -19,12 +19,13 @@
 
     <Button
         android:id="@+id/pro"
-        android:layout_width="212dp"
+        style="@style/Widget.AppCompat.Button"
+        android:background="@drawable/button"
+        app:backgroundTint="@null"
+        android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="444dp"
         android:text="Profile"
-        android:background="@drawable/button"
-        app:backgroundTint="@null"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
