@@ -47,9 +47,10 @@
 
     <EditText
         android:id="@+id/emailInput"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:layout_marginBottom="224dp"
+        android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:ems="10"
         android:inputType="textEmailAddress"
@@ -57,10 +58,10 @@
         android:paddingEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/emailText"
@@ -91,14 +92,16 @@
         app:layout_constraintVertical_bias="0.068" />
 
     <!--to toggle in and out of password mode-->
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText"
         app:layout_constraintVertical_bias="0.0"
@@ -106,15 +109,15 @@
 
         <EditText
             android:id="@+id/passwordInput"
-            android:layout_width="293dp"
+            android:layout_width="300dp"
             android:layout_height="43dp"
+            android:autofillHints=""
             android:background="@drawable/input_boarder"
             android:ems="10"
             android:inputType="textPassword"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:shadowColor="#000000"
-            android:autofillHints="" />
+            android:shadowColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -129,7 +132,7 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/keepSignedInCB"
         app:layout_constraintVertical_bias="0.096" />

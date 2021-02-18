@@ -19,18 +19,18 @@
         app:layout_constraintTop_toBottomOf="@+id/logoImage"
         app:layout_constraintVertical_bias="0.062" />
 
+    <!--to toggle in and out of password mode-->
     <ImageView
         android:id="@+id/logoImage"
+        style="@style/logo_position"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.103"
-        app:srcCompat="@drawable/main_logo"
-        style="@style/logo_position"
-        android:contentDescription="@string/todo" />
+        app:layout_constraintVertical_bias="0.09"
+        app:srcCompat="@drawable/main_logo" />
 
-    <!--to toggle in and out of password mode-->
     <TextView
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
@@ -47,12 +47,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText"
         app:layout_constraintVertical_bias="0.0"
@@ -60,15 +61,15 @@
 
         <EditText
             android:id="@+id/passwordInput"
-            android:layout_width="293dp"
+            android:layout_width="300dp"
             android:layout_height="43dp"
+            android:autofillHints=""
             android:background="@drawable/input_boarder"
             android:ems="10"
             android:inputType="textPassword"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:shadowColor="#000000"
-            android:autofillHints="" />
+            android:shadowColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
@@ -84,14 +85,14 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/termsAndConditionsCB"
         app:layout_constraintVertical_bias="0.096" />
 
     <EditText
         android:id="@+id/emailInput"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:layout_marginBottom="224dp"
         android:background="@drawable/input_boarder"
@@ -101,10 +102,10 @@
         android:paddingEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText"
-        app:layout_constraintVertical_bias="0.0"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/emailText"
@@ -125,6 +126,7 @@
         android:id="@+id/termsAndConditionsCB"
         android:layout_width="330dp"
         android:layout_height="39dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="36dp"
         android:background="#FFFFFF"
         android:backgroundTint="#FFFFFF"
