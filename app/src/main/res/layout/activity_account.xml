@@ -39,11 +39,11 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.814"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.041"
-        app:srcCompat="@drawable/ic_setting" />
+        app:layout_constraintVertical_bias="0.124"
+        app:srcCompat="@drawable/ic_setting36" />
 
     <TextView
         android:id="@+id/name"
@@ -231,7 +231,6 @@
                 app:itemTextColor="@color/nav_item_colors"
                 app:menu="@menu/menu_items" />
         </FrameLayout>
-
 
 
 
