@@ -229,7 +229,8 @@
                 android:background="@color/logoGreen"
                 app:itemIconTint="@color/nav_item_colors"
                 app:itemTextColor="@color/nav_item_colors"
-                app:menu="@menu/menu_items" />
+                app:menu="@menu/menu_items"
+                app:itemIconSize="32dp"/>
         </FrameLayout>
 
 
