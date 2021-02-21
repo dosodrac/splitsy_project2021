@@ -103,8 +103,8 @@
 
     <TextView
         android:id="@+id/pConfirmedTxt1"
-        android:layout_width="297dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Payment Accepted!"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"

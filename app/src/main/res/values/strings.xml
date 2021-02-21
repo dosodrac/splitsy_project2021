@@ -13,4 +13,8 @@
     <string name="pay_later">Pay Later</string>
     <string name="_11_01_2021">11 / 01 / 2021</string>
     <string name="_3">3</string>
+    <string name="enter_current_email">Enter current email</string>
+    <string name="change_email">Change Email</string>
+    <string name="enter_new_email">Enter new email</string>
+    <string name="confirm">Confirm</string>
 </resources>
