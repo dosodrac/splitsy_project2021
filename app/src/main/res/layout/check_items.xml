@@ -105,9 +105,9 @@
             android:id="@+id/editList"
             android:layout_width="40dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/ic_outline_mode_edit"
+            android:visibility="invisible"
 
-            />
+            app:srcCompat="@drawable/ic_outline_mode_edit" />
     </TableRow>
 
     <View
