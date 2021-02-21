@@ -16,7 +16,6 @@ public class AddCard extends AppCompatActivity {
         setContentView(R.layout.activity_add_card);
 
 
-
         //editpassword
         finish=findViewById(R.id.btnfinish);
 

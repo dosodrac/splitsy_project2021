@@ -1,7 +1,7 @@
 
 package com.example.myapplication;
 
-        import androidx.annotation.NonNull;
+import androidx.annotation.NonNull;
         import androidx.appcompat.app.AppCompatActivity;
         import androidx.fragment.app.Fragment;
         import androidx.fragment.app.FragmentTransaction;
@@ -12,6 +12,8 @@ package com.example.myapplication;
         import android.view.MenuItem;
         import android.view.View;
         import android.widget.Button;
+        import android.widget.ImageView;
+        import android.widget.LinearLayout;
         import android.widget.TextView;
 
         import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -21,7 +23,6 @@ package com.example.myapplication;
 public class Account extends AppCompatActivity {
     Button logout;
     TextView changepassword;
-
 
     //addcard
     TextView addcard;
@@ -38,6 +39,8 @@ public class Account extends AppCompatActivity {
         //bottom navbar
         bottomNavigation = findViewById(R.id.bottom_navigation);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
+
 
         //log out btn
         logout=findViewById(R.id.logoutbtn);
@@ -92,17 +95,10 @@ public class Account extends AppCompatActivity {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.nav_home:
-                            Intent i=new Intent(Account.this,MainActivity.class);
-                            startActivity(i);
-
                             return true;
                         case R.id.nav_profile:
-                            Intent intent=new Intent(Account.this,AddCard.class);
-                            startActivity(intent);
                             return true;
                         case R.id.nav_setting:
-                            Intent j =new Intent(Account.this,PastBill.class);
-                            startActivity(j);
                             return true;
                     }
                     return false;

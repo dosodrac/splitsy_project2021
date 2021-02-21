@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".PastBill"></activity>
+        <activity android:name=".SelectItems"></activity>
+        <activity android:name=".BillDetail" />
+        <activity android:name=".PastBill" />
         <activity android:name=".AddCard" />
         <activity android:name=".EditPassword" />
         <activity android:name=".Account" />
@@ -19,7 +21,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- google pay API integration -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>
