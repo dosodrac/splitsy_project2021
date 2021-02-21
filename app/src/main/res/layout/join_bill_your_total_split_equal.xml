@@ -7,7 +7,7 @@
     android:textAlignment="center">
 
     <TextView
-        android:id="@+id/4"
+        android:id="@+id/text4"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.298" />
 
     <TextView
-        android:id="@+id/3"
+        android:id="@+id/text3"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.257" />
 
     <TextView
-        android:id="@+id/2"
+        android:id="@+id/text2"
         style="@style/Widget.AppCompat.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
