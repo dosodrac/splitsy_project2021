@@ -19,5 +19,5 @@
     <string name="confirm">Confirm</string>
     <string name="bank_card_added">Bank card added</string>
     <string name="you_ve_successfully_added_a_new_bank_card_well_done">You\'ve successfully added a new bank card, well done!</string>
-    <string name="continue">Continue</string>
+    <string name="continue_next_page">Continue</string>
 </resources>
