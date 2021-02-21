@@ -64,6 +64,10 @@
     <string name="share_the_code_below_with_the_members_of_this_bill">Share the code below with the members of this bill</string>
     <string name="_0000_0000">0000 - 0000</string>
     <string name="qr_code">QR Code</string>
+    <string name="hi_there_nice_to_see_you_again">Hi there! Nice to see you again</string>
+    <string name="please_use_biometrics_to_sign_in">Please use biometrics to sign in.</string>
+    <string name="change_account">Change Account</string>
+    <string name="not_you">Not you?</string>
 
     <!-- Array for spinner on create new bill page -->
     <string-array name="numOfMembersArray">
