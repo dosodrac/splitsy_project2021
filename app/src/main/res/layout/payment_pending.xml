@@ -7,11 +7,12 @@
     android:layout_height="match_parent">
 
     <Button
-        android:id="@+id/pConfirmedBttn1"
+        android:id="@+id/pPendingBttn1"
         android:layout_width="166dp"
         android:layout_height="50dp"
         android:autoSizeTextType="none"
         android:backgroundTint="#44AEBE"
+        android:capitalize="none"
         android:drawableLeft="@drawable/ic_home"
         android:drawableTint="#FFFFFF"
         android:fontFamily="sans-serif"
@@ -34,7 +35,7 @@
         app:strokeWidth="1px" />
 
     <Button
-        android:id="@+id/pConfirmedBttn2"
+        android:id="@+id/pPendingBttn2"
         android:layout_width="166dp"
         android:layout_height="50dp"
         android:autoSizeTextType="none"
@@ -60,52 +61,38 @@
         app:strokeWidth="1px" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt5"
+        android:id="@+id/pPendingTxt4"
         android:layout_width="296dp"
-        android:layout_height="40dp"
-        android:text="We'll notify you once your  payment has been processed.  "
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414" />
-
-    <TextView
-        android:id="@+id/pConfirmedTxt4"
-        android:layout_width="296dp"
-        android:layout_height="25dp"
-        android:text="Better late then never!"
-        android:textAlignment="center"
+        android:layout_height="wrap_content"
+        android:text="We'll notify you once your  payment has been confirmed. "
+        android:textAlignment="viewStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.370" />
+        app:layout_constraintVertical_bias="0.391" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt3"
-        android:layout_width="296dp"
-        android:layout_height="64dp"
-        android:text="Your payment has been accepted  and will be processed once all of  the items have been selected. "
-        android:textAlignment="center"
+        android:id="@+id/pPendingTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fingers crossed!"
+        android:textAlignment="textStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.197"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.3" />
+        app:layout_constraintVertical_bias="0.322" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt1"
-        android:layout_width="297dp"
-        android:layout_height="60dp"
-        android:text="Payment Accepted!"
+        android:id="@+id/pPendingTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Pending"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#009688"
@@ -119,17 +106,17 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt2"
+        android:id="@+id/pPendingTxt2"
         android:layout_width="296dp"
-        android:layout_height="29dp"
-        android:text="Congrats! You weren't the last  one! "
-        android:textAlignment="center"
+        android:layout_height="40sp"
+        android:text="This payment is pending via  the creators confirmation."
+        android:textAlignment="textStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.250" />
+        app:layout_constraintVertical_bias="0.254" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

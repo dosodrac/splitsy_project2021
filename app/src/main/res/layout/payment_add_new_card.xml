@@ -145,7 +145,7 @@
         android:id="@+id/addNewCardTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter card details"
+        android:text="Add new card"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -160,12 +160,11 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintHorizontal_bias="0.11"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.114"
-        app:srcCompat="@drawable/ic_outline_credit_card"
-        />
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/ic_outline_credit_card" />
 
     <TextView
         android:id="@+id/nameOnCardTxt"
@@ -177,10 +176,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addNewCardTxt"
-        app:layout_constraintVertical_bias="0.006" />
+        app:layout_constraintVertical_bias="0.007" />
 
     <EditText
         android:id="@+id/nameOnCardInput"
@@ -219,6 +218,7 @@
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
         android:ems="10"
+        android:hint="1234 5678 9012 3456"
         android:inputType="number"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
@@ -246,28 +246,28 @@
 
     <EditText
         android:id="@+id/expiryDateInput"
-        android:layout_width="127dp"
+        android:layout_width="110dp"
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
         android:drawableStart="@drawable/ic_baseline_calender"
         android:ems="10"
-        android:hint="mm-yy"
+        android:hint="MM-YY"
         android:inputType="date"
         android:paddingStart="10dp"
         android:paddingEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expDateTxt"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/cvvText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="cvv"
+        android:text="CVV"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -275,11 +275,11 @@
         app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/expiryDateInput"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.009" />
 
     <EditText
         android:id="@+id/cvvInput"
-        android:layout_width="100dp"
+        android:layout_width="110dp"
         android:layout_height="43dp"
         android:background="@drawable/input_boarder"
         android:ems="10"
@@ -288,26 +288,26 @@
         android:paddingEnd="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvvText"
-        app:layout_constraintVertical_bias="0.052" />
+        app:layout_constraintVertical_bias="0.046" />
 
     <TextView
         android:id="@+id/cvvContent"
         android:layout_width="203dp"
-        android:layout_height="56dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="272dp"
-        android:text="the last three digits on the back of your card"
-        android:textSize="16sp"
+        android:text="This is the last three digits  on the back of your card."
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/cvvInput"
         app:layout_constraintTop_toBottomOf="@+id/cvvText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <Button
         android:id="@+id/btnfinish"

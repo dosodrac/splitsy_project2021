@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="so_your_section_of_the_bill_is">so your section of the bill is</string>
+    <string name="members_in_the_bill">members in the bill,</string>
+    <string name="your_bill">Your Bill</string>
+    <string name="the_total_bill_amount_is">The total bill amount is</string>
+    <string name="the_pay_by_date_for_this_bill_is">The pay-by date for this bill is:</string>
+    <string name="there_are">There are</string>
+    <string name="_0_00">£ 0.00</string>
+    <string name="_10_00">£ 10.00 .</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="card_payments_will_only_be_processed_once_all_members_have_completed_selection">Card payments will only be processed once all members have completed selection.</string>
+    <string name="pay_later">Pay Later</string>
+    <string name="_11_01_2021">11 / 01 / 2021</string>
+    <string name="_3">3</string>
 </resources>
