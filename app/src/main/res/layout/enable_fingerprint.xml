@@ -27,6 +27,7 @@
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
         android:text="@string/give_splitisy_permission_to_unlock_this_app_using_the_fingerprint_sensor"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.469"

@@ -68,6 +68,12 @@
     <string name="please_use_biometrics_to_sign_in">Please use biometrics to sign in.</string>
     <string name="change_account">Change Account</string>
     <string name="not_you">Not you?</string>
+    <string name="check_items">Check Items</string>
+    <string name="check_that_all_the_items_have_been_scanned_correctly">Check that all the items have been scanned correctly:</string>
+    <string name="item_name">Item Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
+    <string name="edit">Edit</string>
 
     <!-- Array for spinner on create new bill page -->
     <string-array name="numOfMembersArray">
