@@ -71,9 +71,14 @@
     <string name="check_items">Check Items</string>
     <string name="check_that_all_the_items_have_been_scanned_correctly">Check that all the items have been scanned correctly:</string>
     <string name="item_name">Item Name</string>
-    <string name="quantity">Quantity</string>
-    <string name="price">Price</string>
     <string name="edit">Edit</string>
+    <string name="scan_your_receipt">Scan Your Receipt</string>
+    <string name="add_another_item">Add another item</string>
+    <string name="price">Price</string>
+    <string name="quantity">Quantity</string>
+    <string name="item_s_name">Item\'s Name</string>
+    <string name="or_add_detials_manually">Or add detials manually:</string>
+    <string name="click_here_to_scan">Click here to scan</string>
 
     <!-- Array for spinner on create new bill page -->
     <string-array name="numOfMembersArray">
