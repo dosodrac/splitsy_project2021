@@ -31,12 +31,12 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.108"
-        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/photoImage"
         app:layout_constraintTop_toBottomOf="@+id/scanYourReceiptText"
         app:layout_constraintVertical_bias="0.02" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/photoImage"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -59,7 +59,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/photoImage"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

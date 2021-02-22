@@ -194,11 +194,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.881"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/signInImage"
         app:layout_constraintVertical_bias="0.04" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/signInImage"
         android:layout_width="30dp"
         android:layout_height="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
