@@ -30,7 +30,6 @@ public class Account extends AppCompatActivity {
     //bottom navbar
     BottomNavigationView bottomNavigation;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,22 +40,20 @@ public class Account extends AppCompatActivity {
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
 
-
         //log out btn
-        logout=findViewById(R.id.logoutbtn);
-
+        logout=findViewById(R.id.logoutButton);
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Account.this, MainActivity.class);
-                startActivity(intent);
+                Intent i=new Intent(Account.this, MainActivity.class);
+                startActivity(i);
             }
         });
 
 
         //editpassword
-        changepassword=findViewById(R.id.changepassword);
+        changepassword=findViewById(R.id.changePasswordText);
 
         changepassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +66,7 @@ public class Account extends AppCompatActivity {
 
 
         //editpassword
-        addcard=findViewById(R.id.addcard);
+        addcard=findViewById(R.id.addCardText);
 
         addcard.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -94,11 +91,13 @@ public class Account extends AppCompatActivity {
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
-                        case R.id.nav_home:
+                        case R.id.nav_pastbill:
+                            Intent k=new Intent(Account.this, PastBill.class);
+                            startActivity(k);
                             return true;
-                        case R.id.nav_profile:
+                        case R.id.nav_newbill:
                             return true;
-                        case R.id.nav_setting:
+                        case R.id.nav_account:
                             return true;
                     }
                     return false;

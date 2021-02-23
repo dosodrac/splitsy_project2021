@@ -3,20 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-
     <item
-        android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
-        android:title=" Home" />
+        android:id="@+id/nav_pastbill"
+        android:icon="@drawable/ic_outline_pastbills"
+        android:title=" Past Bill" />
     <item
-        android:id="@+id/nav_profile"
-        android:icon="@drawable/ic_outline_account"
-        android:title=" Profile"
+        android:id="@+id/nav_newbill"
+        android:icon="@drawable/ic_baseline_newbill"
+        android:title=" New Bill"
 
         />
     <item
-        android:id="@+id/nav_setting"
-        android:icon="@drawable/ic_setting"
-        android:title=" Setting" />
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_outline_account"
+        android:title=" Account" />
 
 </menu>

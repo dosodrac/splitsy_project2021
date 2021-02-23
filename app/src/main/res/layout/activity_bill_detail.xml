@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BillDetail">
 
-
     <TextView
-        android:id="@+id/txt1"
+        android:id="@+id/pastBillText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Past Bills"
+        android:text="@string/past_bills"
         android:textColor="@color/logoGreen"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,281 +23,274 @@
 
 
     <TextView
-        android:id="@+id/txt2"
+        android:id="@+id/billText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Good times and Bites"
+        android:text="@string/good_times_and_bites"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.259"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.172" />
+        app:layout_constraintTop_toBottomOf="@+id/pastBillText"
+        app:layout_constraintVertical_bias="0.047" />
 
     <TextView
-        android:id="@+id/txt"
+        android:id="@+id/totalPayAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="£ 26.80"
+        android:layout_marginBottom="96dp"
+        android:text="@string/_26_80"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/TotalAmountText"
+        app:layout_constraintVertical_bias="0.032" />
 
     <TextView
-        android:id="@+id/date"
+        android:id="@+id/payByDayText"
         android:layout_width="wrap_content"
         android:layout_height="22dp"
-        android:text="Pay by day"
+        android:text="@string/pay_by_day"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintHorizontal_bias="0.844"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.249" />
+        app:layout_constraintVertical_bias="0.262" />
 
     <TextView
-        android:id="@+id/payday"
+        android:id="@+id/payDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="28/04/2021"
+        android:layout_marginBottom="16dp"
+        android:text="@string/_28_04_2021"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.843"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/date"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/payByDayText"
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
-        android:id="@+id/txt3"
+        android:id="@+id/TotalAmountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Total amount"
+        android:text="@string/total_amount"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.179"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt2"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintTop_toBottomOf="@+id/billText"
+        app:layout_constraintVertical_bias="0.033" />
+
+
 
     <TextView
-        android:id="@+id/txt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Members"
+        android:id="@+id/memberText"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:layout_marginBottom="404dp"
+        android:text="@string/members"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.166"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt"
-        app:layout_constraintVertical_bias="0.042" />
+        app:layout_constraintTop_toBottomOf="@+id/totalPayAmount"
+        app:layout_constraintVertical_bias="0.403" />
 
     <TextView
-        android:id="@+id/splittype"
+        android:id="@+id/splitTypeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Split type"
+        android:text="@string/split_type"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintHorizontal_bias="0.852"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payday"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-    <!--description-->
+        app:layout_constraintTop_toBottomOf="@+id/payDate"
+        app:layout_constraintVertical_bias="0.053" />
 
     <TextView
-        android:id="@+id/equal"
+        android:id="@+id/equallyText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Equally"
+        android:text="@string/equally"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/splittype"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
+        app:layout_constraintVertical_bias="0.021" />
 
     <TextView
-        android:id="@+id/txt5"
+        android:id="@+id/numberOfMember"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
+        android:layout_marginBottom="168dp"
+        android:text="@string/_5"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
+        app:layout_constraintTop_toBottomOf="@+id/memberText"
+        app:layout_constraintVertical_bias="0.031" />
 
-    <!--item names-->
 
     <TextView
-        android:id="@+id/txt6"
+        android:id="@+id/YourAmountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Your amount"
+        android:text="@string/your_amount"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintHorizontal_bias="0.178"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt5"
-        app:layout_constraintVertical_bias="0.042" />
-
+        app:layout_constraintTop_toBottomOf="@+id/numberOfMember"
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
-        android:id="@+id/txt7"
+        android:id="@+id/yourPayAmount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6.80"
+        android:text="@string/_6_80"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt6"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/YourAmountText"
+        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
-        android:id="@+id/status"
+        android:id="@+id/pendingStatus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:drawableEnd="@drawable/ic_time"
-        android:text="Pending"
-
+        android:text="@string/pending"
         android:textColor="@color/red"
         android:textSize="16sp"
+        app:drawableEndCompat="@drawable/ic_time"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintHorizontal_bias="0.841"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt6"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/equallyText"
+        app:layout_constraintVertical_bias="0.129" />
 
     <Button
-        android:id="@+id/pay"
+        android:id="@+id/payButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="240dp"
         android:layout_height="50dp"
         android:background="@drawable/button"
-        android:text="Pay"
+        android:text="@string/pay"
         android:textAllCaps="false"
         android:textSize="20sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/status"
-        app:layout_constraintVertical_bias="0.06" />
+        app:layout_constraintTop_toBottomOf="@+id/pendingStatus"
+        app:layout_constraintVertical_bias="0.118" />
 
     <TextView
-        android:id="@+id/desc"
+        android:id="@+id/descriptionText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Description"
+        android:text="@string/description"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay"
+        app:layout_constraintTop_toBottomOf="@+id/payButton"
         app:layout_constraintVertical_bias="0.033" />
 
     <TextView
-        android:id="@+id/items"
+        android:id="@+id/itemText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Item Name"
+        android:text="@string/item_name"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.171"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText"
+        app:layout_constraintVertical_bias="0.06" />
 
     <TextView
-        android:id="@+id/itemquantity"
+        android:id="@+id/itemQuantity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Quantity"
-
+        android:text="@string/quantity"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText"
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
-        android:id="@+id/price"
+        android:id="@+id/itemPrice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Price"
+        android:text="@string/price"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/desc"
-        app:layout_constraintVertical_bias="0.062" />
+        app:layout_constraintTop_toBottomOf="@+id/descriptionText"
+        app:layout_constraintVertical_bias="0.055" />
 
     <TextView
         android:id="@+id/item1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Sushi"
+        android:text="@string/sushi"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemquantity"
+        app:layout_constraintTop_toBottomOf="@+id/itemText"
         app:layout_constraintVertical_bias="0.09" />
 
     <TextView
-        android:id="@+id/itemquantity1"
+        android:id="@+id/itemQuantity1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2"
-
+        android:text="@string/_2"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/items"
+        app:layout_constraintTop_toBottomOf="@+id/itemQuantity"
         app:layout_constraintVertical_bias="0.09" />
 
     <TextView
         android:id="@+id/item2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="Drinks"
+        android:text="@string/drinks"
+        android:textStyle="bold"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -307,60 +300,59 @@
         app:layout_constraintVertical_bias="0.093" />
 
     <TextView
-        android:id="@+id/itemprice"
+        android:id="@+id/itemPrice1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="£30.45"
+        android:text="@string/_30_45"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.855"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/price"
+        app:layout_constraintTop_toBottomOf="@+id/itemPrice"
         app:layout_constraintVertical_bias="0.09" />
 
     <TextView
-        android:id="@+id/itemquantity2"
-        android:layout_width="8dp"
-        android:layout_height="26dp"
-
-        android:text="1"
+        android:id="@+id/itemQuantity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_1"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemquantity1"
-        app:layout_constraintVertical_bias="0.133" />
+        app:layout_constraintTop_toBottomOf="@+id/itemQuantity1"
+        app:layout_constraintVertical_bias="0.101" />
 
     <TextView
         android:id="@+id/itemprice2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="£10.25"
+        android:text="@string/_10_25"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemprice"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toBottomOf="@+id/itemPrice1"
+        app:layout_constraintVertical_bias="0.101" />
 
     <!-- botton nav bar-->
 
     <FrameLayout
         android:id="@+id/container"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-
-        >
+        app:layout_constraintVertical_bias="0.0" >
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottom_navigation"
@@ -371,7 +363,7 @@
             app:itemIconSize="32dp"
             app:itemIconTint="@color/nav_item_colors"
             app:itemTextColor="@color/white"
-            app:menu="@menu/pastbill_menu" />
+            app:menu="@menu/menu_items" />
     </FrameLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
