@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myapplication">
+    package="com.example.splitsy">
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Splitsy"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".SelectItems"></activity>
-        <activity android:name=".BillDetail" />
-        <activity android:name=".PastBill" />
-        <activity android:name=".AddCard" />
-        <activity android:name=".EditPassword" />
-        <activity android:name=".Account" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.splitsy.SelectItems"></activity>
+        <activity android:name="com.example.splitsy.BillDetail" />
+        <activity android:name="com.example.splitsy.PastBill" />
+        <activity android:name="com.example.splitsy.AddCard" />
+        <activity android:name="com.example.splitsy.EditPassword" />
+        <activity android:name="com.example.splitsy.Account" />
+        <activity android:name="com.example.splitsy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

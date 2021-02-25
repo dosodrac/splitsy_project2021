@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.splitsy;
 
 import android.content.Context;
 
