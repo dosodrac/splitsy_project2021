@@ -14,7 +14,7 @@ public class EditPassword extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_password);
+        setContentView(R.layout.forgot_password);
 
         btn=findViewById(R.id.btn);
 
