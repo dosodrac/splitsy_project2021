@@ -1,101 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/pPendingBttn1"
-        android:layout_width="166dp"
-        android:layout_height="50dp"
-        android:autoSizeTextType="none"
-        android:backgroundTint="#44AEBE"
-        android:capitalize="none"
-        android:drawableLeft="@drawable/ic_home"
-        android:drawableTint="#FFFFFF"
-        android:fontFamily="sans-serif"
-        android:text="Home"
-        android:textAlignment="gravity"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
-        android:textIsSelectable="false"
-        android:textSize="16sp"
-        app:cornerRadius="50px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.531"
-        app:rippleColor="#673AB7"
-        app:strokeColor="#009688"
-        app:strokeWidth="1px" />
-
-    <Button
-        android:id="@+id/pPendingBttn2"
-        android:layout_width="166dp"
-        android:layout_height="50dp"
-        android:autoSizeTextType="none"
-        android:backgroundTint="#44AEBE"
-        android:capitalize="none"
-        android:fontFamily="sans-serif"
-        android:text="View Bills Details"
-        android:textAlignment="gravity"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF"
-        android:textIsSelectable="false"
-        android:textSize="16sp"
-        app:cornerRadius="50px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.627"
-        app:rippleColor="#673AB7"
-        app:strokeColor="#009688"
-        app:strokeWidth="1px" />
-
     <TextView
-        android:id="@+id/pPendingTxt4"
-        android:layout_width="296dp"
-        android:layout_height="wrap_content"
-        android:text="We'll notify you once your  payment has been confirmed. "
-        android:textAlignment="viewStart"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.391" />
-
-    <TextView
-        android:id="@+id/pPendingTxt3"
+        android:id="@+id/paymentPendingText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Fingers crossed!"
-        android:textAlignment="textStart"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.197"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
-
-    <TextView
-        android:id="@+id/pPendingTxt1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Payment Pending"
+        android:text="@string/payment_accepted"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#009688"
+        android:textColor="@color/logoGreen"
         android:textIsSelectable="false"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -106,17 +23,49 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/pPendingTxt2"
+        android:id="@+id/pPendingTxt1"
         android:layout_width="296dp"
         android:layout_height="40sp"
-        android:text="This payment is pending via  the creators confirmation."
+        android:layout_marginTop="30dp"
+        android:text="@string/this_payment_is_pending_via_the_creators_confirmation"
         android:textAlignment="textStart"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.254" />
+        app:layout_constraintTop_toBottomOf="@+id/paymentPendingText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pPendingTxt2"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/we_ll_notify_you_once_your_payment_has_been_confirmed"
+        android:textAlignment="viewStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pPendingTxt3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/pPendingTxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fingers_crossed"
+        android:textAlignment="textStart"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pPendingTxt1"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
