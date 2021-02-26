@@ -230,7 +230,7 @@
         app:layout_constraintVertical_bias="0.023" />
 
     <TextView
-        android:id="@+id/expDateTxt"
+        android:id="@+id/expiryDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -259,11 +259,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.129"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/expDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/expiryDateText"
         app:layout_constraintVertical_bias="0.026" />
 
     <TextView
-        android:id="@+id/cvvText"
+        android:id="@+id/cvvText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -290,11 +290,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
+        app:layout_constraintTop_toBottomOf="@+id/cvvText1"
         app:layout_constraintVertical_bias="0.046" />
 
     <TextView
-        android:id="@+id/cvvContent"
+        android:id="@+id/cvvText2"
         android:layout_width="203dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -306,7 +306,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.2"
         app:layout_constraintStart_toEndOf="@+id/cvvInput"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
+        app:layout_constraintTop_toBottomOf="@+id/cvvText1"
         app:layout_constraintVertical_bias="0.163" />
 
     <Button
