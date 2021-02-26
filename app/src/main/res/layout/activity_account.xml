@@ -22,24 +22,24 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <ImageView
-        android:id="@+id/settingImage"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:id="@+id/settingsImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginStart="24dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.702"
         app:layout_constraintStart_toEndOf="@+id/yourAccountText"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/ic_setting36"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/ic_setting36" />
 
     <TextView
         android:id="@+id/nameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="30dp"
         android:text="@string/name"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -53,27 +53,28 @@
         android:id="@+id/nameInput"
         android:layout_width="293dp"
         android:layout_height="43dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:layout_marginBottom="24dp"
+        android:autofillHints="name"
         android:background="@drawable/input_boarder"
         android:drawableEnd="@drawable/ic_pen"
         android:ems="10"
         android:hint="@string/user_name"
+        android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="6dp"
         app:layout_constraintBottom_toTopOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.381"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameText"
-        android:autofillHints="name"
-        android:inputType="textEmailAddress" />
+        app:layout_constraintVertical_bias="0.26" />
 
     <TextView
         android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/email"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -86,6 +87,7 @@
         android:id="@+id/emailInput"
         android:layout_width="293dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:autofillHints="text"
         android:background="@drawable/input_boarder"
         android:ems="10"
@@ -94,7 +96,7 @@
         android:paddingStart="16dp"
         android:paddingEnd="6dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.406"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText" />
 
@@ -102,7 +104,9 @@
         android:id="@+id/changeEmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/change_email"
+        android:textColor="@color/ourBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.791"
@@ -114,7 +118,7 @@
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:text="@string/password"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -123,15 +127,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/changeEmailText" />
 
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordText"
         app:layout_constraintVertical_bias="0.0"
@@ -144,24 +150,40 @@
             android:layout_marginBottom="4dp"
             android:background="@drawable/input_boarder"
             android:ems="10"
-            android:paddingTop="0dp"
-            android:paddingBottom="0dp"
-            android:paddingStart="16dp"
             android:hint="@string/user_password"
-            android:paddingEnd="6dp"
-            android:shadowColor="#000000"
-            android:inputType="textPassword"
             android:importantForAutofill="no"
-            />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:inputType="textPassword"
+            android:paddingStart="16dp"
+            android:paddingTop="0dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="0dp"
+            android:shadowColor="#000000" />
 
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/logoGreen"
+                app:itemIconSize="32dp"
+                app:itemIconTint="@color/nav_item_colors"
+                app:itemTextColor="@color/nav_item_colors"
+                app:menu="@menu/menu_items" />
+        </FrameLayout>
+    </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
         android:id="@+id/changePasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="@string/change_password"
+        android:textColor="@color/ourBlack"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.755"
         app:layout_constraintStart_toStartOf="parent"
@@ -171,7 +193,7 @@
         android:id="@+id/cardDetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="15dp"
         android:text="@string/card_details"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -184,41 +206,48 @@
         android:id="@+id/cardDetailInput"
         android:layout_width="293dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:ems="10"
-        android:paddingStart="16dp"
         android:hint="@string/card_num"
+        android:inputType="number"
+        android:paddingStart="16dp"
         android:paddingEnd="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/editCardText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.398"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardDetailText"
-        android:inputType="number"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/editCardText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="156dp"
         android:text="@string/edit_card"
+        android:textColor="@color/ourBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardDetailInput" />
+        app:layout_constraintTop_toBottomOf="@+id/cardDetailInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/addCardText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
         android:text="@string/add_new_card"
+        android:textColor="@color/ourBlack"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCardText" />
+        app:layout_constraintHorizontal_bias="0.66"
+        app:layout_constraintStart_toEndOf="@+id/editCardText"
+        app:layout_constraintTop_toBottomOf="@+id/cardDetailInput"
+        app:layout_constraintVertical_bias="0.07" />
 
     <Button
         android:id="@+id/logoutButton"
@@ -234,33 +263,10 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCardText"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.175" />
 
 
     <!-- botton nav bar-->
 
-
-        <FrameLayout
-            android:id="@+id/container"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
-
-            <com.google.android.material.bottomnavigation.BottomNavigationView
-                android:id="@+id/bottom_navigation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/logoGreen"
-                app:itemIconSize="32dp"
-                app:itemIconTint="@color/nav_item_colors"
-                app:itemTextColor="@color/nav_item_colors"
-                app:menu="@menu/menu_items" />
-        </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
