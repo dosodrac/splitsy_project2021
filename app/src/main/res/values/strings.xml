@@ -92,7 +92,7 @@
     <string name="dark_mode">Dark Mode</string>
     <string name="settings">Settings</string>
     <string name="high_contrast_mode">High Contrast Mode</string>
-    <string name="finger_print_access">Finger Print Access</string>
+    <string name="finger_print_access">Fingerprint Access</string>
     <string name="notifications">Notifications</string>
     <string name="export_data">Export data</string>
 
