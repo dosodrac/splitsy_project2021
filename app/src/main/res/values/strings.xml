@@ -95,6 +95,13 @@
     <string name="finger_print_access">Fingerprint Access</string>
     <string name="notifications">Notifications</string>
     <string name="export_data">Export data</string>
+    <string name="payment_accepted">Payment Accepted!</string>
+    <string name="better_late_then_never">Better late then never!</string>
+    <string name="view_bill_details">View bill details</string>
+    <string name="home">Home</string>
+    <string name="we_ll_notify_you_once_your_payment_has_been_processed">We\'ll notify you once your payment has been processed.</string>
+    <string name="your_payment_has_been_accepted_and_will_be_processed_once_all_of_the_items_have_been_selected">Your payment has been accepted and will be processed once all of the items have been selected.</string>
+    <string name="congrats_you_weren_t_the_last_one">Congrats! You were not the last one!</string>
 
 
 </resources>
