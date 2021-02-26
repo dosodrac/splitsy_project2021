@@ -18,7 +18,7 @@ public class BillDetail extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bill_detail);
+        setContentView(R.layout.bill_detail);
 
         //bottom navbar
         bottomNavigation = findViewById(R.id.bottom_navigation);
