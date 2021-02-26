@@ -15,7 +15,6 @@
     <string name="_3">3</string>
     <string name="enter_current_email">Enter current email</string>
     <string name="change_email">Change Email</string>
-    <string name="enter_new_email">Enter new email</string>
     <string name="confirm">Confirm</string>
     <string name="bank_card_added">Bank card added</string>
     <string name="you_ve_successfully_added_a_new_bank_card_well_done">You\'ve successfully added a new bank card, well done!</string>
@@ -75,7 +74,6 @@
     <string name="drinks">Drinks</string>
     <string name="_30_45">£30.45</string>
     <string name="_10_25">£10.25</string>
-
     <string name="_08_65">£08.65</string>
     <string name="_16_75">£16.75</string>
     <string name="jan_28">jan 28</string>
@@ -87,6 +85,16 @@
     <string name="_13_80">£13.80</string>
     <string name="paid">paid</string>
     <string name="repayments_complete">Repayments Complete</string>
+    <string name="enter_new_email">Enter new email</string>
+    <string name="enter_current_password">Enter current password</string>
+    <string name="enter_new_password">Enter new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="settings">Settings</string>
+    <string name="high_contrast_mode">High Contrast Mode</string>
+    <string name="finger_print_access">Finger Print Access</string>
+    <string name="notifications">Notifications</string>
+    <string name="export_data">Export data</string>
 
 
 </resources>
