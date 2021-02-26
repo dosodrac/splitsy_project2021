@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/emailSentText"
+        android:id="@+id/emailSentText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/email_sent"
@@ -17,10 +17,10 @@
         app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.265" />
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/emailContent"
+        android:id="@+id/emailSentText2"
         android:layout_width="284dp"
         android:layout_height="49dp"
         android:layout_marginTop="20dp"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.425"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailSentText"
+        app:layout_constraintTop_toBottomOf="@+id/emailSentText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -38,18 +38,18 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="@string/home"
         android:textAlignment="center"
         android:textAllCaps="false"
-        android:textSize="15sp"
+        android:textSize="16sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailContent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/emailSentText2"
+        app:layout_constraintVertical_bias="0.281" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

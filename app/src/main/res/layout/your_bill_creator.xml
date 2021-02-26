@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/yourBillsText"
+        android:id="@+id/yourBillsText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/your_bill"
@@ -22,18 +22,19 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/yourSectionText"
+        android:id="@+id/yourBillsText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/your_section_of_the_bill_is"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.345"
+        app:layout_constraintHorizontal_bias="0.36"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourBillsText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText1"
+        app:layout_constraintVertical_bias="0.004" />
 
     <TextView
         android:id="@+id/priceText"
@@ -47,23 +48,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/yourSectionText"
-        app:layout_constraintTop_toBottomOf="@+id/yourBillsText"
+        app:layout_constraintStart_toEndOf="@+id/yourBillsText2"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText1"
         app:layout_constraintVertical_bias="0.031" />
 
     <TextView
-        android:id="@+id/notifyContent"
-        android:layout_width="266dp"
+        android:id="@+id/yourBillsText3"
+        android:layout_width="250dp"
         android:layout_height="55dp"
         android:text="@string/we_will_notify_you_when_you_have_been_paid_back_by_each_member"
         android:textAlignment="center"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourSectionText"
-        app:layout_constraintVertical_bias="0.078" />
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText2"
+        app:layout_constraintVertical_bias="0.076" />
 
     <Button
         android:id="@+id/homeButton"
@@ -83,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/notifyContent"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText3"
         app:layout_constraintVertical_bias="0.206" />
 
     <Button

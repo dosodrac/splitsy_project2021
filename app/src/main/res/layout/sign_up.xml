@@ -73,7 +73,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/signUpButton"
+        android:id="@+id/accountContinueButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
@@ -155,7 +155,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
         app:layout_constraintVertical_bias="0.507" />
 
     <TextView
@@ -171,6 +171,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/accountLink"
-        app:layout_constraintTop_toBottomOf="@+id/signUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
         app:layout_constraintVertical_bias="0.503" />
 </androidx.constraintlayout.widget.ConstraintLayout>

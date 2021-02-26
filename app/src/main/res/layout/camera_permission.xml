@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/cameraPermissionText"
+        android:id="@+id/cameraPermissionText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/camera_permission"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/cameraPermissionContent"
+        android:id="@+id/cameraPermissionText2"
         android:layout_width="319dp"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
@@ -33,14 +33,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cameraPermissionText"
+        app:layout_constraintTop_toBottomOf="@+id/cameraPermissionText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/continueButton"
+        android:id="@+id/scanCreateButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="@string/continue_button"
         android:textAllCaps="false"
@@ -48,9 +49,9 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cameraPermissionContent"
-        app:layout_constraintVertical_bias="0.283" />
+        app:layout_constraintTop_toBottomOf="@+id/cameraPermissionText2"
+        app:layout_constraintVertical_bias="0.278" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

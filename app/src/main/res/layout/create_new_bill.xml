@@ -31,7 +31,7 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintHorizontal_bias="0.134"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createNewBillText"
         app:layout_constraintVertical_bias="0.0" />
@@ -40,6 +40,7 @@
         android:id="@+id/billNameInput"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:ems="10"
@@ -57,7 +58,7 @@
         android:id="@+id/payByDayText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/pay_by_day"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -72,6 +73,7 @@
         android:id="@+id/payByDayInput"
         android:layout_width="140dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:drawableStart="@drawable/ic_baseline_calender"
@@ -91,7 +93,7 @@
         android:id="@+id/numberOfMembersText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/number_of_members_to_join"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -106,7 +108,7 @@
         android:id="@+id/splitTypeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/split_type"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -121,6 +123,7 @@
         android:id="@+id/byItemButton"
         android:layout_width="115dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/outline_button"
         android:drawableLeft="@drawable/ic_outline_fork_green"
         android:paddingLeft="10dp"
@@ -130,15 +133,16 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/equallyButton"
         android:layout_width="115dp"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/outline_button"
         android:drawableLeft="@drawable/ic_baseline_pie_chart_green"
         android:paddingLeft="10dp"
@@ -148,39 +152,40 @@
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintHorizontal_bias="0.434"
         app:layout_constraintStart_toEndOf="@+id/byItemButton"
         app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/continueButton"
+        android:id="@+id/scanCreateButton"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="@string/continue_button"
         android:textAllCaps="false"
-        android:textSize="15sp"
+        android:textSize="16sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/equallyButton"
-        app:layout_constraintVertical_bias="0.191" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/numOfMembersSpinner"
-        android:layout_width="100dp"
-        android:layout_height="43dp"
+        android:layout_width="75dp"
+        android:layout_height="40dp"
         android:entries="@array/numOfMembersArray"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/peopleIcon"
         app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.00999999" />
 
     <ImageView
         android:id="@+id/peopleIcon"

@@ -51,6 +51,7 @@
         android:id="@+id/nameOnCardInput"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/input_boarder"
         android:ems="10"
         android:inputType="textPersonName"
@@ -67,7 +68,7 @@
         android:id="@+id/cardNumText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/card_number"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -82,6 +83,7 @@
         android:id="@+id/cardNumInput"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/input_boarder"
         android:ems="10"
         android:inputType="number"
@@ -98,7 +100,7 @@
         android:id="@+id/expiryDateText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/expiry_date"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -113,6 +115,7 @@
         android:id="@+id/expiryDateInput"
         android:layout_width="127dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/input_boarder"
         android:drawableStart="@drawable/ic_baseline_calender"
         android:ems="10"
@@ -128,10 +131,10 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/cvvText"
+        android:id="@+id/cvvText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/cvv"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
@@ -146,6 +149,7 @@
         android:id="@+id/cvvInput"
         android:layout_width="100dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/input_boarder"
         android:ems="10"
         android:inputType="date"
@@ -155,14 +159,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
+        app:layout_constraintTop_toBottomOf="@+id/cvvText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/cvvContent"
+        android:id="@+id/cvvText2"
         android:layout_width="203dp"
         android:layout_height="56dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="5dp"
         android:layout_marginEnd="36dp"
         android:layout_marginBottom="272dp"
         android:text="@string/this_is_the_last_three_digits_on_the_back_of_your_card"
@@ -171,7 +176,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/cvvInput"
-        app:layout_constraintTop_toBottomOf="@+id/cvvText"
+        app:layout_constraintTop_toBottomOf="@+id/cvvText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -179,6 +184,7 @@
         style="@style/Widget.AppCompat.Button"
         android:layout_width="280dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="@string/finish"
         android:textAllCaps="false"
@@ -189,7 +195,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cvvInput"
-        app:layout_constraintVertical_bias="0.336" />
+        app:layout_constraintVertical_bias="0.0" />
 
 
 

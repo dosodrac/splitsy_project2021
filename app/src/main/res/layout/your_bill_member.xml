@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/yourBillsText"
+        android:id="@+id/yourBillsText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/your_bill"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/yourSectionText"
+        android:id="@+id/yourBillsText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.345"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourBillsText"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -48,8 +48,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/yourSectionText"
-        app:layout_constraintTop_toBottomOf="@+id/yourBillsText"
+        app:layout_constraintStart_toEndOf="@+id/yourBillsText2"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -63,7 +63,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourSectionText"
+        app:layout_constraintTop_toBottomOf="@+id/yourBillsText2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView

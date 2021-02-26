@@ -7,7 +7,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/shareCodeText"
+        android:id="@+id/shareCodeText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/share_code"
@@ -16,58 +16,62 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintHorizontal_bias="0.186"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias=".114" />
+        app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/shareCodeContent"
+        android:id="@+id/shareCodeText2"
         android:layout_width="267dp"
-        android:layout_height="61dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/share_the_code_below_with_the_members_of_this_bill"
-        android:textAlignment="center"
+        android:textAlignment="viewStart"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.361"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shareCodeText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/shareCodeText1"
+        app:layout_constraintVertical_bias="0.002" />
 
     <TextView
         android:id="@+id/codeText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/_0000_0000"
         android:textColor="@color/logoGreen"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/shareCodeContent"
-        app:layout_constraintVertical_bias="0.087" />
+        app:layout_constraintTop_toBottomOf="@+id/shareCodeText2"
+        app:layout_constraintVertical_bias="0.07999998" />
 
     <ImageView
         android:id="@+id/QRCodeImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
+        android:layout_marginTop="50dp"
         android:contentDescription="@string/qr_code"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/codeText"
-        app:layout_constraintVertical_bias="0.058"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/ic_baseline_qr_code" />
 
     <Button
         android:id="@+id/shareButton"
         style="@style/Widget.AppCompat.Button"
-        android:layout_width="150dp"
+        android:layout_width="280dp"
         android:layout_height="50dp"
+        android:layout_marginTop="50dp"
         android:background="@drawable/button"
         android:text="@string/share_code"
         android:textAllCaps="false"
@@ -76,9 +80,9 @@
         app:icon="@drawable/ic_baseline_share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/QRCodeImage"
-        app:layout_constraintVertical_bias="0.207" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

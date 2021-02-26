@@ -79,6 +79,8 @@
     <string name="item_s_name">Item\'s Name</string>
     <string name="or_add_detials_manually">Or add detials manually:</string>
     <string name="click_here_to_scan">Click here to scan</string>
+    <string name="image_of_a_fingerprint">Image of a fingerprint</string>
+    <string name="or_add_details_manually">Or add details manually:</string>
 
     <!-- Array for spinner on create new bill page -->
     <string-array name="numOfMembersArray">

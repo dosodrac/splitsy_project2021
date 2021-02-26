@@ -7,7 +7,7 @@
     android:background="@null">
 
     <TextView
-        android:id="@+id/enableFingerprintText"
+        android:id="@+id/enableFingerprintText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/enable_fingerprint"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/contentText"
+        android:id="@+id/enableFingerprintText2"
         android:layout_width="330dp"
         android:layout_height="52dp"
         android:layout_marginTop="20dp"
@@ -32,7 +32,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enableFingerprintText"
+        app:layout_constraintTop_toBottomOf="@+id/enableFingerprintText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -44,7 +44,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contentText"
+        app:layout_constraintTop_toBottomOf="@+id/enableFingerprintText2"
         app:layout_constraintVertical_bias="0.426"
         app:srcCompat="@drawable/ic_baseline_fingerprint" />
 
@@ -52,20 +52,23 @@
         android:id="@+id/permissionCB"
         android:layout_width="330dp"
         android:layout_height="72dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="@color/logoGreen"
         android:buttonTint="@color/logoGreen"
         android:text="@string/i_give_permission_for_the_use_of_my_fingerprint_for_login_purposes"
+        android:textColor="@color/ourBlack"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/fingerPrintImage"
-        app:layout_constraintVertical_bias="0.234" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/denyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:background="#FFFFFF"
         android:stateListAnimator="@null"
         android:text="@string/deny"
@@ -76,5 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/permissionCB" />
+        app:layout_constraintTop_toBottomOf="@+id/permissionCB"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
