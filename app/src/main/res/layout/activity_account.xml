@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Account">
 
-
     <TextView
         android:id="@+id/yourAccountText"
         android:layout_width="wrap_content"
@@ -21,91 +20,84 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.114" />
 
-    <ImageView
-        android:id="@+id/settingImage"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.702"
-        app:layout_constraintStart_toEndOf="@+id/yourAccountText"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.048"
-        app:srcCompat="@drawable/ic_setting36"
-        android:contentDescription="@string/todo" />
 
     <TextView
-        android:id="@+id/nameText"
+        android:id="@+id/nicknameText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="@string/name"
+        android:layout_marginTop="30dp"
+        android:text="Nickname"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/yourAccountText" />
-
+        app:layout_constraintTop_toBottomOf="@+id/yourAccountText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/nameInput"
-        android:layout_width="293dp"
+        android:id="@+id/nicknameInput"
+        android:layout_width="300dp"
         android:layout_height="43dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints="name"
         android:background="@drawable/input_boarder"
         android:drawableEnd="@drawable/ic_pen"
         android:ems="10"
-        android:hint="@string/user_name"
+        android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/emailText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameText"
-        android:autofillHints="name"
-        android:inputType="textEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/nicknameText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/emailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/email"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameInput" />
+        app:layout_constraintTop_toBottomOf="@+id/nicknameInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/emailInput"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:autofillHints="text"
         android:background="@drawable/input_boarder"
         android:ems="10"
-        android:hint="@string/user_email"
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/changeEmailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
         android:text="@string/change_email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
+        app:layout_constraintHorizontal_bias="0.809"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput"
         app:layout_constraintVertical_bias="0.0" />
@@ -114,19 +106,21 @@
         android:id="@+id/passwordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
         android:text="@string/password"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/changeEmailText" />
+        app:layout_constraintTop_toBottomOf="@+id/changeEmailText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
         android:layout_width="300dp"
         android:layout_height="43dp"
+        android:layout_marginTop="5dp"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -138,108 +132,109 @@
         app:passwordToggleEnabled="true">
 
         <EditText
-            android:id="@+id/passwordEditTet"
-            android:layout_width="293dp"
+            android:id="@+id/passwordInput"
+            android:layout_width="300dp"
             android:layout_height="43dp"
-            android:layout_marginBottom="4dp"
+            android:autofillHints=""
             android:background="@drawable/input_boarder"
             android:ems="10"
+            android:inputType="textPassword"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:paddingStart="16dp"
-            android:hint="@string/user_password"
-            android:paddingEnd="6dp"
-            android:shadowColor="#000000"
-            android:inputType="textPassword"
-            android:importantForAutofill="no"
-            />
+            android:shadowColor="#000000" />
     </com.google.android.material.textfield.TextInputLayout>
-
 
     <TextView
         android:id="@+id/changePasswordText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="@string/change_password"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/cardDetailText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="@string/card_details"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.151"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/changePasswordText" />
+        app:layout_constraintTop_toBottomOf="@+id/changePasswordText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/cardDetailInput"
-        android:layout_width="293dp"
+        android:layout_width="300dp"
         android:layout_height="43dp"
-        android:layout_marginBottom="4dp"
+        android:layout_marginTop="5dp"
+        android:autofillHints=""
         android:background="@drawable/input_boarder"
         android:ems="10"
+        android:inputType="number"
         android:paddingStart="16dp"
-        android:hint="@string/card_num"
         android:paddingEnd="6dp"
-        app:layout_constraintBottom_toTopOf="@+id/editCardText"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.438"
+        app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cardDetailText"
-        android:inputType="number"
-        android:autofillHints="" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/editCardText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="5dp"
         android:text="@string/edit_card"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.794"
+        app:layout_constraintHorizontal_bias="0.824"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardDetailInput" />
+        app:layout_constraintTop_toBottomOf="@+id/cardDetailInput"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/addCardText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="@string/add_new_card"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.771"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editCardText" />
+        app:layout_constraintTop_toBottomOf="@+id/editCardText"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/logoutButton"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="260dp"
-        android:layout_height="50dp"
-        android:background="@drawable/button"
-        android:text="@string/log_out"
-        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#FFFFFF"
+        android:stateListAnimator="@null"
+        android:text="Log out"
+        android:textColor="@color/logoGreen"
+        android:textSize="20sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/addCardText"
-        app:layout_constraintVertical_bias="0.168" />
+        app:layout_constraintVertical_bias="0.0" />
 
-
-    <!-- botton nav bar-->
-
-
+    <!-- botton nav bar -->
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
@@ -262,5 +257,4 @@
                 app:itemTextColor="@color/nav_item_colors"
                 app:menu="@menu/menu_items" />
         </FrameLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
