@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="0.114" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt2"
+        android:id="@+id/paymentAcceptedText1"
         android:layout_width="296dp"
         android:layout_height="29dp"
         android:layout_marginTop="30dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt3"
+        android:id="@+id/paymentAcceptedText2"
         android:layout_width="296dp"
         android:layout_height="64dp"
         android:layout_marginTop="20dp"
@@ -48,11 +48,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pConfirmedTxt2"
+        app:layout_constraintTop_toBottomOf="@+id/paymentAcceptedText1"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt4"
+        android:id="@+id/paymentAcceptedText3"
         android:layout_width="296dp"
         android:layout_height="25dp"
         android:layout_marginTop="20dp"
@@ -62,11 +62,11 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pConfirmedTxt3"
+        app:layout_constraintTop_toBottomOf="@+id/paymentAcceptedText2"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/pConfirmedTxt5"
+        android:id="@+id/paymentAcceptedText4"
         android:layout_width="296dp"
         android:layout_height="40dp"
         android:layout_marginTop="20dp"
@@ -76,7 +76,50 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pConfirmedTxt4"
+        app:layout_constraintTop_toBottomOf="@+id/paymentAcceptedText3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/home"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_baseline_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentAcceptedText4"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/viewBillDetailsButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:text="@string/view_bill_details"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_baseline_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
