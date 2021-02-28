@@ -105,5 +105,6 @@
     <string name="this_payment_is_pending_via_the_creators_confirmation">This payment is pending via the creators confirmation.</string>
     <string name="fingers_crossed">Fingers crossed!</string>
     <string name="we_ll_notify_you_once_your_payment_has_been_confirmed">We will notify you once your payment has been confirmed.</string>
+    <string name="_6_80p">£ 6.80</string>
 
 </resources>
