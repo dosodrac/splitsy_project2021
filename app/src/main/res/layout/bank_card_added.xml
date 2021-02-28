@@ -6,45 +6,13 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/bCardAddedTxt2"
-        android:layout_width="296dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="57dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="58dp"
-        android:text="@string/you_ve_successfully_added_a_new_bank_card_well_done"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bCardAddedTxt1" />
-
-    <Button
-        android:id="@+id/emailConfirmBttn2"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="136dp"
-        android:background="@drawable/button"
-        android:text="Continue"
-        android:textAllCaps="false"
-        android:textSize="16sp"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bCardAddedTxt2"
-        app:layout_constraintVertical_bias="0.007" />
-
-    <TextView
-        android:id="@+id/bCardAddedTxt1"
+        android:id="@+id/bankCardAddedText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/bank_card_added"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#009688"
+        android:textColor="@color/logoGreen"
         android:textIsSelectable="false"
         android:textSize="25sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -53,5 +21,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/bankCardAddedText2"
+        android:layout_width="296dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/you_ve_successfully_added_a_new_bank_card_well_done"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankCardAddedText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/continueButton"
+        style="@style/Theme.MaterialComponents.NoActionBar"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button"
+        android:text="@string/continue_next_page"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bankCardAddedText2"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
