@@ -11,7 +11,7 @@
         android:id="@+id/billName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/david_s_bill"
+        android:text="@string/david_dinner_bill"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/selectItemText"
         app:layout_constraintEnd_toEndOf="parent"
@@ -41,6 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="@string/select"
+        android:textColor="@color/ourBlack"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -55,12 +56,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/item_name"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -69,12 +71,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/quantity"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -83,12 +86,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/price"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.712"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -97,12 +101,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/pay"
+        android:textColor="@color/ourBlack"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.903"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:layout_constraintTop_toBottomOf="@+id/selectText"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
@@ -118,7 +123,8 @@
         app:layout_constraintHorizontal_bias="0.137"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemNameText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemQuantity1"
@@ -129,10 +135,11 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.323"
+        app:layout_constraintStart_toEndOf="@+id/itemName1"
         app:layout_constraintTop_toBottomOf="@+id/quantityText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemPrice1"
@@ -144,16 +151,17 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/itemQuantity1"
         app:layout_constraintTop_toBottomOf="@+id/priceText"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemName2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/bites"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -161,13 +169,14 @@
         app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemName1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemName3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/drinks"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -175,106 +184,70 @@
         app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemName2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemQuantity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="28dp"
         android:text="@string/_2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toEndOf="@+id/itemName2"
         app:layout_constraintTop_toBottomOf="@+id/itemQuantity1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemPrice2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="@string/_14_75"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/itemQuantity2"
         app:layout_constraintTop_toBottomOf="@+id/itemPrice1"
-        app:layout_constraintVertical_bias="0.026" />
-
-    <TextView
-        android:id="@+id/payCheckBox1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="16sp"
-        app:drawableEndCompat="@drawable/ic_checkbox"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payText"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/payCheckBox3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        app:drawableEndCompat="@drawable/ic_box"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payCheckBox2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemQuantity3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="348dp"
         android:text="@string/_2"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.31"
+        app:layout_constraintStart_toEndOf="@+id/itemName3"
         app:layout_constraintTop_toBottomOf="@+id/itemQuantity2"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <TextView
-        android:id="@+id/payCheckBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="272dp"
-        android:textSize="16sp"
-        app:drawableEndCompat="@drawable/ic_box"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.904"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payCheckBox1"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <TextView
         android:id="@+id/itemprice3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/_08_65"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.709"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/itemQuantity3"
         app:layout_constraintTop_toBottomOf="@+id/itemPrice2"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:textColor="@color/ourBlack" />
 
     <Button
         android:id="@+id/createButton"
@@ -295,16 +268,75 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <View
-        android:id="@+id/divider"
-        android:layout_width="340dp"
+        android:id="@+id/selectDivider"
+        android:layout_width="330dp"
         android:layout_height="2dp"
         android:layout_marginTop="10dp"
         android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.629"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/selectText"
+        app:layout_constraintTop_toBottomOf="@+id/quantityText"
         app:layout_constraintVertical_bias="0.0" />
+
+    <CheckBox
+        android:id="@+id/selectCheckBox1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:buttonTint="@color/logoGreen"
+        android:checked="false"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="@color/logoGreen"
+        android:textColor="@color/ourBlack"
+        android:textColorHighlight="@color/logoGreen"
+        android:textColorLink="@color/logoGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemPrice1"
+        app:layout_constraintTop_toBottomOf="@+id/payText"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <CheckBox
+        android:id="@+id/selectCheckBox2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:buttonTint="@color/logoGreen"
+        android:checked="false"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="@color/logoGreen"
+        android:textColor="@color/ourBlack"
+        android:textColorHighlight="@color/logoGreen"
+        android:textColorLink="@color/logoGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/itemPrice2"
+        app:layout_constraintTop_toBottomOf="@+id/selectCheckBox1"
+        app:layout_constraintVertical_bias="0.036" />
+
+    <CheckBox
+        android:id="@+id/selectCheckBox3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        android:buttonTint="@color/logoGreen"
+        android:checked="false"
+        android:hapticFeedbackEnabled="false"
+        android:shadowColor="@color/logoGreen"
+        android:textColor="@color/ourBlack"
+        android:textColorHighlight="@color/logoGreen"
+        android:textColorLink="@color/logoGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectCheckBox2"
+        app:layout_constraintVertical_bias="0.042" />
 
 
     <!-- botton nav bar

@@ -109,5 +109,7 @@
     <string name="the_last_three_digits_on_the_back_of_your_card2">The last three digits on the back of your card</string>
     <string name="cvv2">CVV</string>
     <string name="add_new_card2">Add new card</string>
+    <string name="david_s_bill2">David\'s Bill</string>
+    <string name="david_dinner_bill">David Dinner Bill</string>
 
 </resources>
