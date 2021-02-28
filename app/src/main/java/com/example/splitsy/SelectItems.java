@@ -9,6 +9,6 @@ public class SelectItems extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_select_items);
+        setContentView(R.layout.select_items);
     }
 }
