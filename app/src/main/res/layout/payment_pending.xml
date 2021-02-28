@@ -68,5 +68,48 @@
         app:layout_constraintTop_toBottomOf="@+id/paymentPendingText2"
         app:layout_constraintVertical_bias="0.0" />
 
+    <Button
+        android:id="@+id/homeButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="@string/home"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_baseline_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentPendingText4"
+        app:layout_constraintVertical_bias="0.206" />
+
+    <Button
+        android:id="@+id/viewBillDetailsButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button"
+        android:paddingLeft="65dp"
+        android:paddingRight="65dp"
+        android:text="@string/view_bill_details"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:backgroundTint="@null"
+        app:icon="@drawable/ic_baseline_list"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/homeButton"
+        app:layout_constraintVertical_bias="0.0" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

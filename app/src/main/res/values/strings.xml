@@ -206,6 +206,7 @@
     <string name="nickname">Nickname</string>
     <string name="log_out2">Log out</string>
     <string name="settings_icon">settings icon</string>
+    <string name="confirm_new_email">Confirm new email</string>
 
->>>>>>> XMLpart2
+    >>>>>>> XMLpart2
 </resources>
