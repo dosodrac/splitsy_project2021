@@ -1,14 +1,14 @@
-package com.example.myapplication;
+package com.example.splitsy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class SelectItems extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.your_bill_member);
+        setContentView(R.layout.select_items);
     }
 }

@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
-    <color name="purple_700">#FF3700B3</color>
-    <color name="teal_200">#FF03DAC5</color>
-    <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+<<<<<<< HEAD
     <color name="white">#FFFFFFFF</color>D
     <color name="logoGreen">#44AEBE</color>D
     <color name="ourBlack">#7A7979</color>
+=======
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="logoGreen">#44AEBE</color>
+    <color name="ourBlack">#7A7979</color>
+
+    <color name="teal_200">#7A7979</color>
+    <color name="purple_500">#7A7979</color>
+    <color name="red">#FF0606</color>
+
+    <color name="lightsmoke">#5D5E61</color>
+    <color name="dimgray">#696969</color>
+    <color name="darkgrey">#A9A9A9</color>
+    <color name="gray">#F9F5F5</color>
+    <color name="darkgray">#b8b8b8</color>
+
+     <color name="colorWhiteTransparent">#80ffffff</color>
+
+>>>>>>> XMLpart2
 </resources>

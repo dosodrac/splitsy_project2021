@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
+    package="com.example.splitsy">
 
     <application
         android:allowBackup="true"
@@ -9,13 +10,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.example.splitsy.SelectItems"></activity>
+        <activity android:name="com.example.splitsy.BillDetail" />
+        <activity android:name="com.example.splitsy.PastBill" />
+        <activity android:name="com.example.splitsy.AddCard" />
+        <activity android:name="com.example.splitsy.EditPassword" />
+        <activity android:name="com.example.splitsy.Account" />
+        <activity android:name="com.example.splitsy.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity> <!-- google pay API integration -->
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
     </application>
 
 </manifest>
