@@ -111,5 +111,8 @@
     <string name="add_new_card2">Add new card</string>
     <string name="david_s_bill2">David\'s Bill</string>
     <string name="david_dinner_bill">David Dinner Bill</string>
+    <string name="nickname">Nickname</string>
+    <string name="log_out2">Log out</string>
+    <string name="settings_icon">settings icon</string>
 
 </resources>

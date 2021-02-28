@@ -74,10 +74,10 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.004"
         app:layout_constraintStart_toEndOf="@+id/cashImage"
         app:layout_constraintTop_toBottomOf="@+id/cardNumberText"
-        app:layout_constraintVertical_bias="0.03" />
+        app:layout_constraintVertical_bias="0.020" />
 
     <TextView
         android:id="@+id/payPriceText"
@@ -130,16 +130,16 @@
     <ImageView
         android:id="@+id/cashImage"
         android:layout_width="50dp"
-        android:layout_height="39dp"
+        android:layout_height="35dp"
         android:layout_marginTop="20dp"
-        android:scaleType="fitStart"
+        android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.192"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/visaImage"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/money" />
+        app:srcCompat="@drawable/money2" />
 
     <ImageButton
         android:id="@+id/payFingerprintImage"

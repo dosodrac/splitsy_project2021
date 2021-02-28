@@ -26,7 +26,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:text="Nickname"
+        android:text="@string/nickname"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -220,10 +220,10 @@
         android:id="@+id/logoutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="50dp"
         android:background="#FFFFFF"
         android:stateListAnimator="@null"
-        android:text="Log out"
+        android:text="@string/log_out2"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:backgroundTint="@null"
@@ -236,15 +236,16 @@
 
     <ImageView
         android:id="@+id/settingsImage"
-        android:layout_width="35dp"
-        android:layout_height="35dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="@string/settings_icon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.647"
+        app:layout_constraintHorizontal_bias="0.643"
         app:layout_constraintStart_toEndOf="@+id/yourAccountText"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.111"
-        app:srcCompat="@drawable/ic_baseline_settings" />
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@drawable/ic_baseline_settings_24" />
 
     <!-- botton nav bar
     <FrameLayout
