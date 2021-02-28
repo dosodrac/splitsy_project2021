@@ -1,27 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-<<<<<<< HEAD
-    <color name="white">#FFFFFFFF</color>D
-    <color name="logoGreen">#44AEBE</color>D
-    <color name="ourBlack">#7A7979</color>
-=======
     <color name="white">#FFFFFFFF</color>
-
     <color name="logoGreen">#44AEBE</color>
     <color name="ourBlack">#7A7979</color>
-
     <color name="teal_200">#7A7979</color>
     <color name="purple_500">#7A7979</color>
     <color name="red">#FF0606</color>
-
     <color name="lightsmoke">#5D5E61</color>
     <color name="dimgray">#696969</color>
     <color name="darkgrey">#A9A9A9</color>
     <color name="gray">#F9F5F5</color>
     <color name="darkgray">#b8b8b8</color>
-
      <color name="colorWhiteTransparent">#80ffffff</color>
-
->>>>>>> XMLpart2
 </resources>
