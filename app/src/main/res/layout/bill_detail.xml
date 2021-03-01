@@ -371,7 +371,7 @@
         app:layout_constraintTop_toBottomOf="@+id/yourPayAmount"
         app:layout_constraintVertical_bias="0.0" />
 
-    <!-- botton nav bar
+  <!-- bottom nav bar -->
 
     <FrameLayout
         android:id="@+id/container"
@@ -391,9 +391,9 @@
             android:layout_gravity="bottom"
             android:background="@color/logoGreen"
             app:itemIconSize="32dp"
-            app:itemIconTint="@color/nav_item_colors"
+            app:itemIconTint="@color/white"
             app:itemTextColor="@color/white"
             app:menu="@menu/menu_items" />
-    </FrameLayout>-->
+    </FrameLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
