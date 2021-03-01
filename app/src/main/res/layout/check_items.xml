@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/checkItemsText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/check_items"
+        android:textColor="@color/logoGreen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114" />
+
+    <TextView
+        android:id="@+id/checkItemsText2"
+        android:layout_width="329dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/check_that_all_the_items_have_been_scanned_correctly"
+        android:textColor="@color/ourBlack"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkItemsText1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TableRow
+        android:id="@+id/tableRowHeadings"
+        android:layout_width="336dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkItemsText2"
+        app:layout_constraintVertical_bias="0.014">
+
+        <TextView
+            android:id="@+id/itemNameText"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/item_name"
+            android:textColor="@color/ourBlack" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="@string/quantity"
+            android:textColor="@color/ourBlack" />
+
+        <TextView
+            android:id="@+id/priceOfItemText"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textColor="@color/ourBlack" />
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="@string/edit"
+            android:textColor="@color/ourBlack" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowItems"
+        android:layout_width="332dp"
+        android:layout_height="33dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkDivider"
+        app:layout_constraintVertical_bias="0.027">
+
+        <TextView
+            android:id="@+id/itemNameList"
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/quantityList"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/priceOfItemList"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/editListIcon"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+
+            app:srcCompat="@drawable/ic_outline_mode_edit" />
+    </TableRow>
+
+    <View
+        android:id="@+id/checkDivider"
+        android:layout_width="330dp"
+        android:layout_height="2dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowHeadings"
+        app:layout_constraintVertical_bias="0.016" />
+
+    <Button
+        android:id="@+id/scanCreateButton"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:text="@string/continue_button"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.855" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
