@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Splitsy</string>
+    <string name="diamond_shape">Diamond_shape</string>
+    <string name="sign_in">Sign In</string>
+    <string name="hi_there">Hi There</string>
+    <string name="example_splitsy_com">example@splitsy.com</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="keep_me_signed_in">Keep me signed in</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="padlock">padlock</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="person">person</string>
+    <string name="enable_fingerprint">Enable Fingerprint</string>
+    <string name="give_splitisy_permission_to_unlock_this_app_using_the_fingerprint_sensor">Give Splitisy permission to unlock this app using the fingerprint sensor</string>
+    <string name="fingerprint_draw">fingerprint draw</string>
+    <string name="i_give_permission_for_the_use_of_my_fingerprint_for_login_purposes">I give permission for the use of my fingerprint for login purposes</string>
+    <string name="deny">DENY</string>
+    <string name="past_bills1">Past Bills</string>
+    <string name="new_bill1">New Bill</string>
+    <string name="account1">Account</string>
+    <string name="new_bill">New Bill</string>
+    <string name="create_new_bill">Create New Bill</string>
+    <string name="join_bill">Join Bill</string>
+    <string name="bill_name">Bill Name</string>
+    <string name="pay_by_day">Pay By Day</string>
+    <string name="dd_mm_yy">DD/MM/YY</string>
+    <string name="bill_name1">Bill name</string>
+    <string name="number_of_members_to_join">Number of members to join</string>
+    <string name="split_type">Split Type</string>
+    <string name="by_item">By Item</string>
+    <string name="equally">Equally</string>
+    <string name="two_person_shape">two person shape</string>
+    <string name="continue1">Continue</string>
+
+    <!-- Spiner on new bill page-->
+    <string-array name="numOfMembersArray">
+        <item>1</item><item>2</item><item>3</item><item>4</item><item>5</item><item>6</item><item>7</item><item>8</item><item>9</item><item>10</item>
+        <item>11</item><item>12</item><item>13</item><item>14</item><item>15</item><item>16</item><item>17</item><item>18</item><item>19</item><item>20</item>
+        <item>21</item><item>22</item><item>23</item><item>24</item><item>25</item><item>26</item><item>27</item><item>28</item><item>29</item><item>30</item>
+        <item>31</item><item>32</item><item>33</item><item>34</item><item>35</item><item>36</item><item>37</item><item>38</item><item>39</item><item>40</item>
+        <item>41</item><item>42</item><item>43</item><item>44</item><item>45</item><item>46</item><item>47</item><item>48</item><item>49</item><item>50</item>
+
+    </string-array>
+</resources>

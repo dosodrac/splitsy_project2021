@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/pastBills"
+        android:title="@string/past_bills1"
+        android:icon="@drawable/past_bills_selector"/>
+    <item
+        android:id="@+id/newBill"
+        android:title="@string/new_bill1"
+        android:icon="@drawable/new_bill_selector"/>
+    <item
+        android:id="@+id/account"
+        android:title="@string/account1"
+        android:icon="@drawable/account_selector"/>
+
+</menu>
