@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".FilterMenu"></activity>
+        <activity android:name=".EmailSent"></activity>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".EnterCardDetails" />
+        <activity android:name=".AccountDetails" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".FilterMenu" />
         <activity android:name=".YourBillCreator" />
         <activity android:name=".ShareCode" />
         <activity android:name=".EnterBillDetails" />

@@ -41,7 +41,7 @@
     <string name="create">Create</string>
     <string name="share_code">Share Code</string>
     <string name="share_the_code_below_with_the_members_of_this_bill">Share the code below with the members of this bill</string>
-    <string name="_0000_0000">0000-0000</string>
+    <string name="_0000_0000">0000–0000</string>
     <string name="qr_code">QR code</string>
     <string name="your_bill">Your Bill</string>
     <string name="your_section_of_the_bill_is">Your section of the bill is</string>
@@ -77,6 +77,8 @@
     <string name="descending">Descending</string>
     <string name="sort">Sort</string>
     <string name="done">Done</string>
+    <string name="i_agree_to_the_terms_of_service_and_privacy_policy">I agree to the Terms of Service and Privacy Policy</string>
+    <string name="have_an_account">Have an account?</string>
 
 
     <!-- Spiner on new bill page-->
