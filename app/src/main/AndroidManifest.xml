@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".EnterBillDetails"></activity>
+        <activity android:name=".YourBillCreator"></activity>
+        <activity android:name=".ShareCode" />
+        <activity android:name=".EnterBillDetails" />
         <activity android:name=".CreateNewBill" />
         <activity android:name=".Your_Account" />
         <activity android:name=".Past_Bills" />
