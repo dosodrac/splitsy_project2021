@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateNewBill">
+    tools:context=".EnterBillDetails">
 
     <TextView
-        android:id="@+id/createNewBillText"
+        android:id="@+id/enterBillDetailsText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/create_new_bill"
+        android:text="@string/enter_bill_details"
         android:textColor="@color/logoGreen"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -22,187 +22,143 @@
         app:layout_constraintVertical_bias="0.114"/>
 
     <TextView
-        android:id="@+id/billNameText"
+        android:id="@+id/billAmountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/bill_name"
+        android:text="@string/enter_bill_amount"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintHorizontal_bias="0.164"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/createNewBillText"
+        app:layout_constraintTop_toBottomOf="@+id/enterBillDetailsText"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/billNameInput"
+        android:id="@+id/billAmountInput"
         android:layout_width="300dp"
         android:layout_height="43dp"
         android:layout_marginTop="5dp"
-        android:autofillHints=""
         android:background="@drawable/format_input_box"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:hint="@string/poundsign"
+        android:inputType="numberDecimal"
         android:paddingStart="16dp"
         android:paddingEnd="6dp"
-        android:hint="@string/bill_name1"
-        android:textColorHint="@color/white"
+        android:textColor="@color/ourBlack"
+        android:autofillHints=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/billNameText"
+        app:layout_constraintTop_toBottomOf="@+id/billAmountText"
         app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
-        android:id="@+id/payByDayText"
+        android:id="@+id/billAmount2Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/pay_by_day"
+        android:text="@string/enter_second_bill_amount"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.227"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/billNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/billAmountInput"
         app:layout_constraintVertical_bias="0.0"/>
 
     <EditText
-        android:id="@+id/payByDayInput"
-        android:layout_width="140dp"
+        android:id="@+id/billAmount2Input"
+        android:layout_width="300dp"
         android:layout_height="43dp"
         android:layout_marginTop="5dp"
-        android:autofillHints=""
         android:background="@drawable/format_input_box"
-        android:drawableStart="@drawable/ic_calendar"
         android:ems="10"
-        android:hint="@string/dd_mm_yy"
-        android:inputType="text|date"
-        android:paddingStart="10dp"
+        android:hint="@string/poundsign"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
         android:paddingEnd="6dp"
+        android:visibility="invisible"
+        android:autofillHints=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintHorizontal_bias="0.378"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payByDayText"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount2Text"
         app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
-        android:id="@+id/numberOfMembersText"
+        android:id="@+id/billAmount3Text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/number_of_members_to_join"
+        android:text="@string/enter_third_bill_amount"
         android:textColor="@color/logoGreen"
         android:textSize="20sp"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintHorizontal_bias="0.203"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/payByDayInput"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/billAmount2Input"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <EditText
+        android:id="@+id/billAmount3Input"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/format_input_box"
+        android:ems="10"
+        android:hint="@string/poundsign"
+        android:inputType="numberDecimal"
+        android:paddingStart="16dp"
+        android:paddingEnd="6dp"
+        android:visibility="invisible"
+        android:autofillHints=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.378"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount3Text"
+        app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
-        android:id="@+id/splitTypeText"
+        android:id="@+id/addAnotherLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="@string/split_type"
-        android:textColor="@color/logoGreen"
-        android:textSize="20sp"
+        android:text="@string/add_another_bill"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
+        app:layout_constraintHorizontal_bias="0.153"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numOfMembersSpinner"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Spinner
-        android:id="@+id/numOfMembersSpinner"
-        android:layout_width="75dp"
-        android:layout_height="40dp"
-        android:entries="@array/numOfMembersArray"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/peopleIcon"
-        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
-        app:layout_constraintVertical_bias="0.00999999"/>
-
-    <ImageView
-        android:id="@+id/peopleIcon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/two_person_shape"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/numberOfMembersText"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/ic_people" />
-
-    <Button
-        android:id="@+id/byItemButton"
-        android:layout_width="115dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/format_button_outline"
-        android:drawableLeft="@drawable/ic_fork_green"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:text="@string/by_item"
-        android:textAllCaps="false"
-        android:textColor="@color/logoGreen"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
+        app:layout_constraintTop_toBottomOf="@+id/billAmount3Input"
         app:layout_constraintVertical_bias="0.0"
-        tools:ignore="RtlHardcoded" />
+        app:drawableStartCompat="@drawable/ic_add_green"/>
 
     <Button
-        android:id="@+id/equallyButton"
-        android:layout_width="115dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/format_button_outline"
-        android:drawableLeft="@drawable/ic_pie_chart_green"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:text="@string/equally"
-        android:textAllCaps="false"
-        android:textColor="@color/logoGreen"
-        app:backgroundTint="@null"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.434"
-        app:layout_constraintStart_toEndOf="@+id/byItemButton"
-        app:layout_constraintTop_toBottomOf="@+id/splitTypeText"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="RtlHardcoded" />
-
-    <Button
-        android:id="@+id/scanCreateButton"
+        android:id="@+id/createButton"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:background="@drawable/format_button"
-        android:text="@string/continue1"
+        android:text="@string/create"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:backgroundTint="@null"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/equallyButton"
+        app:layout_constraintTop_toBottomOf="@+id/addAnotherLink"
         app:layout_constraintVertical_bias="0.0"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -222,8 +178,6 @@
 
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
