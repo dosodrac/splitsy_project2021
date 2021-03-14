@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".EmailSent"></activity>
+        <activity android:name=".ScanYourReceipt"></activity>
+        <activity android:name=".BiometricSignIn" />
+        <activity android:name=".EmailSent" />
         <activity android:name=".ForgotPassword" />
         <activity android:name=".EnterCardDetails" />
         <activity android:name=".AccountDetails" />

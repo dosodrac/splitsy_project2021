@@ -94,6 +94,19 @@
     <string name="email_sent">Email Sent</string>
     <string name="please_follow_the_instructions_on_your_email_to_reset_your_password">Please follow the instructions on your email to reset your password</string>
     <string name="home">Home</string>
+    <string name="hi_there_nice_to_see_you_again">Hi there! Nice to see you again!</string>
+    <string name="please_use_biometrics_to_sign_in">Please use biometrics to sign in</string>
+    <string name="image_of_a_fingerprint">image of a fingerprint</string>
+    <string name="change_account">Change Account</string>
+    <string name="not_you">Not you?</string>
+    <string name="scan_your_receipt">Scan Your Receipt</string>
+    <string name="or_add_details_manually">Or add details manually</string>
+    <string name="image_of_a_camera">image of a camera</string>
+    <string name="click_here_to_scan">Click here to scan</string>
+    <string name="add_another_item">Add another item</string>
+    <string name="item_s_name">Item\'s Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="price">Price</string>
 
 
     <!-- Spiner on new bill page-->
