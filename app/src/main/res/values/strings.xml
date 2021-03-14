@@ -39,6 +39,11 @@
     <string name="enter_third_bill_amount">Enter Third Bill Amount</string>
     <string name="add_another_bill">Add another bill</string>
     <string name="create">Create</string>
+    <string name="share_code">Share Code</string>
+    <string name="share_the_code_below_with_the_members_of_this_bill">Share the code below with the members of this bill</string>
+    <string name="_0000_0000">0000-0000</string>
+    <string name="qr_code">QR code</string>
+
 
     <!-- Spiner on new bill page-->
     <string-array name="numOfMembersArray">
