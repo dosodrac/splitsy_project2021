@@ -6,21 +6,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class Your_Account extends AppCompatActivity {
-
-    Button logoutbtn; // log out button
-    ImageView settingbtn; //settings button
+public class Settings extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_your__account);
+        setContentView(R.layout.activity_settings);
 
         // ---------Bottom navigation code
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_bottom);
@@ -31,35 +25,17 @@ public class Your_Account extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.pastBills:
-                        startActivity(new Intent(Your_Account.this, Past_Bills.class));
+                        startActivity(new Intent(Settings.this, Past_Bills.class));
                         return true;
                     case R.id.newBill:
-                        startActivity(new Intent(Your_Account.this, New_Bill.class));
+                        startActivity(new Intent(Settings.this, New_Bill.class));
                         return true;
                     case R.id.account:
+                        startActivity(new Intent(Settings.this, Your_Account.class));
                         return true;
                 }
                 return false;
             }
         });// --------end of Botton navigation
-
-        // ----log out button
-        logoutbtn = (Button)findViewById(R.id.logoutButton);
-        logoutbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Your_Account.this, Sign_In.class));
-            }
-        }); // ----end log out button----
-
-        // ---settings button----
-        settingbtn = (ImageView)findViewById(R.id.settingsImage);
-        settingbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Your_Account.this, Settings.class));
-            }
-        });
-
     }
 }

@@ -127,6 +127,13 @@
     <string name="check_that_all_the_items_have_been_scanned_correctly">Check that all the items have been scanned correctly</string>
     <string name="edit">Edit</string>
     <string name="pencil_making_a_line">pencil making a line</string>
+    <string name="high_constrast_mode">High Constrast Mode</string>
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="fingerprint_access">Fingerprint Access</string>
+    <string name="notifications">Notifications</string>
+    <string name="export_data">Export data</string>
+    <string name="floppy_disc">floppy disc</string>
 
 
     <!-- Spiner on new bill page-->
