@@ -49,6 +49,15 @@
     <string name="home">Home</string>
     <string name="we_will_notify_you_when_you_have_been_paid_back_by_each">We will notify you when you have been paid back by each</string>
     <string name="view_bill_details">View Bill Details</string>
+    <string name="your_account">Your Account</string>
+    <string name="nickname">Nickname</string>
+    <string name="change_email">Change Email</string>
+    <string name="change_password">Change Password</string>
+    <string name="card_details">Card Details</string>
+    <string name="edit_card">Edit Card</string>
+    <string name="add_new_card">Add New Card</string>
+    <string name="log_out">Log out</string>
+    <string name="settings_icon">settings icon</string>
 
 
     <!-- Spiner on new bill page-->
