@@ -65,7 +65,6 @@
             android:id="@+id/passwordInput"
             android:layout_width="300dp"
             android:layout_height="43dp"
-            android:autofillHints=""
             android:background="@drawable/format_input_box"
             android:ems="10"
             android:inputType="textPassword"
@@ -104,14 +103,14 @@
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:autofillHints=""
+        android:hint="@string/example_splitsy_com"
+        android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="LabelFor" />
+        app:layout_constraintVertical_bias="0.0"/>
 
     <TextView
         android:id="@+id/emailText"
