@@ -68,7 +68,7 @@ public class ScanYourReceipt extends AppCompatActivity {
         createbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ScanYourReceipt.this, SelectItems.class));
+                startActivity(new Intent(ScanYourReceipt.this, CheckItems.class));
             }
         });
     }

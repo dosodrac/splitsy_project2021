@@ -123,6 +123,10 @@
     <string name="_75">£!$.75</string>
     <string name="_08_65">£08.65</string>
     <string name="_14_75">£14.75</string>
+    <string name="check_items">Check Items</string>
+    <string name="check_that_all_the_items_have_been_scanned_correctly">Check that all the items have been scanned correctly</string>
+    <string name="edit">Edit</string>
+    <string name="pencil_making_a_line">pencil making a line</string>
 
 
     <!-- Spiner on new bill page-->
