@@ -6,10 +6,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class ShareCode extends AppCompatActivity {
+
+    Button sharebtn; // share button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,5 +41,14 @@ public class ShareCode extends AppCompatActivity {
                 return false;
             }
         });// --------end of Botton navigation
+
+        // ------share button code
+        sharebtn = (Button)findViewById(R.id.shareButton);
+        sharebtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ShareCode.this, YourBillCreator.class));
+            }
+        });
     }
 }

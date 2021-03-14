@@ -43,6 +43,12 @@
     <string name="share_the_code_below_with_the_members_of_this_bill">Share the code below with the members of this bill</string>
     <string name="_0000_0000">0000-0000</string>
     <string name="qr_code">QR code</string>
+    <string name="your_bill">Your Bill</string>
+    <string name="your_section_of_the_bill_is">Your section of the bill is</string>
+    <string name="_00_00">£00.00</string>
+    <string name="home">Home</string>
+    <string name="we_will_notify_you_when_you_have_been_paid_back_by_each">We will notify you when you have been paid back by each</string>
+    <string name="view_bill_details">View Bill Details</string>
 
 
     <!-- Spiner on new bill page-->
