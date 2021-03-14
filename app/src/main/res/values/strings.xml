@@ -58,6 +58,25 @@
     <string name="add_new_card">Add New Card</string>
     <string name="log_out">Log out</string>
     <string name="settings_icon">settings icon</string>
+    <string name="july">July</string>
+    <string name="_2020">2020</string>
+    <string name="good_times_and_bites">Good times and Bites</string>
+    <string name="_23_88">£23.88</string>
+    <string name="dinner_and_bites">Dinner and Bites</string>
+    <string name="pending">Pending</string>
+    <string name="_13_80">£13.80</string>
+    <string name="repayment_pending">Repayment Pending</string>
+    <string name="paid">Paid</string>
+    <string name="repayments_complete">Repayments Complete</string>
+    <string name="past_bills">Past Bills</string>
+    <string name="filter_by">Filter By</string>
+    <string name="tags">Tags</string>
+    <string name="amount">Amount</string>
+    <string name="date">Date</string>
+    <string name="ascending">Ascending</string>
+    <string name="descending">Descending</string>
+    <string name="sort">Sort</string>
+    <string name="done">Done</string>
 
 
     <!-- Spiner on new bill page-->
