@@ -11,14 +11,15 @@ import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class CreateNewBill extends AppCompatActivity {
+public class CheckItems extends AppCompatActivity {
 
-    Button createbtn; // create new bill button
+    Button createbtn; // create button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_create_new_bill);
+        setContentView(R.layout.activity_check_items);
+
 
         // ---------Bottom navigation code
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_bottom);
@@ -29,27 +30,25 @@ public class CreateNewBill extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.pastBills:
-                        startActivity(new Intent(CreateNewBill.this, Past_Bills.class));
+                        startActivity(new Intent(CheckItems.this, Past_Bills.class));
                         return true;
                     case R.id.newBill:
-                        startActivity(new Intent(CreateNewBill.this, New_Bill.class));
+                        startActivity(new Intent(CheckItems.this, New_Bill.class));
                         return true;
                     case R.id.account:
-                        startActivity(new Intent(CreateNewBill.this, Your_Account.class));
+                        startActivity(new Intent(CheckItems.this, Your_Account.class));
                         return true;
                 }
                 return false;
             }
         });// --------end of Botton navigation
 
-        // ----- create new bill button-----
-        createbtn = (Button) findViewById(R.id.scanCreateButton);
+        createbtn = (Button)findViewById(R.id.scanCreateButton);
         createbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(CreateNewBill.this, EnterBillDetails.class));
-                startActivity(new Intent(CreateNewBill.this, ScanYourReceipt.class));
+                startActivity(new Intent(CheckItems.this, SelectItems.class));
             }
-        });// end of create new bill button-----
+        });
     }
 }
