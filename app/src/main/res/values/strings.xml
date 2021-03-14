@@ -46,7 +46,6 @@
     <string name="your_bill">Your Bill</string>
     <string name="your_section_of_the_bill_is">Your section of the bill is</string>
     <string name="_00_00">£00.00</string>
-    <string name="home">Home</string>
     <string name="we_will_notify_you_when_you_have_been_paid_back_by_each">We will notify you when you have been paid back by each</string>
     <string name="view_bill_details">View Bill Details</string>
     <string name="your_account">Your Account</string>
@@ -90,6 +89,11 @@
     <string name="cvv">CVV</string>
     <string name="this_is_the_last_three_digits_on_the_back_of_your_card">This is the last three digits on the back of your card</string>
     <string name="finish">Finish</string>
+    <string name="please_enter_you_email_address_to_reset_your_password">Please enter you email address to reset your password</string>
+    <string name="submit">Submit</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="please_follow_the_instructions_on_your_email_to_reset_your_password">Please follow the instructions on your email to reset your password</string>
+    <string name="home">Home</string>
 
 
     <!-- Spiner on new bill page-->
