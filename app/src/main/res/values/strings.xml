@@ -105,8 +105,24 @@
     <string name="click_here_to_scan">Click here to scan</string>
     <string name="add_another_item">Add another item</string>
     <string name="item_s_name">Item\'s Name</string>
+    <string name="camera_permission">Camera Permission</string>
+    <string name="on_the_next_page_give_this_app_permission_to_access_your_camera">On the next page give this app permission to access your camera</string>
+    <string name="select_items">Select items</string>
+    <string name="select_the_items_you_want_to_pay_for">Select the items you want to pay for:</string>
+    <string name="item_name">Item Name</string>
     <string name="quantity">Quantity</string>
+    <string name="david_dinner_bill">David Dinner Bill</string>
     <string name="price">Price</string>
+    <string name="pay">Pay</string>
+    <string name="sushi">Sushi</string>
+    <string name="_1">1</string>
+    <string name="_16_75">£16.75</string>
+    <string name="bites">Bites</string>
+    <string name="drinks">Drinks</string>
+    <string name="_2">2</string>
+    <string name="_75">£!$.75</string>
+    <string name="_08_65">£08.65</string>
+    <string name="_14_75">£14.75</string>
 
 
     <!-- Spiner on new bill page-->
