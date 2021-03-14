@@ -79,6 +79,8 @@
     <string name="done">Done</string>
     <string name="i_agree_to_the_terms_of_service_and_privacy_policy">I agree to the Terms of Service and Privacy Policy</string>
     <string name="have_an_account">Have an account?</string>
+    <string name="this_is_the_name_others_will_see">This is the name others will see.</string>
+    <string name="account_details">Account Details</string>
 
 
     <!-- Spiner on new bill page-->
