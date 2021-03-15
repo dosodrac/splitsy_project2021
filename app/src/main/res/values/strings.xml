@@ -1,4 +1,4 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources >
     <string name="app_name">Splitsy</string>
     <string name="diamond_shape">Diamond_shape</string>
     <string name="sign_in">Sign In</string>
@@ -137,12 +137,14 @@
     <string name="enter_new_email">Enter new email</string>
     <string name="confirm">Confirm</string>
     <string name="email_changed">Email Changed</string>
-    <string name="you_ve_successfully_updated_your_email_well_done">You have successfully updated your email, well done!</string>
+    <string name="you_ve_successfully_updated_your_email_well_done">You\'ve successfully updated your email, well done!</string>
     <string name="enter_current_password">Enter current password</string>
     <string name="enter_new_password">Enter new password</string>
     <string name="confirm_new_password">Confirm new password</string>
     <string name="password_changed">Password Changed</string>
-    <string name="you_have_successfully_updated_your_password_well_done">You have successfully updated your password, well done!</string>
+    <string name="you_have_successfully_updated_your_password_well_done">You\'ve successfully updated your password, well done!</string>
+    <string name="you_have_successfully_added_a_new_bank_card_well_done">You\'ve successfully added a new bank card, well done!</string>
+    <string name="bank_card_added">Bank card added</string>
 
 
     <!-- Spiner on new bill page-->

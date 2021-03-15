@@ -113,10 +113,9 @@
     <Button
         android:id="@+id/filterbutton"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="3dp"
         android:background="@drawable/format_button"
         android:paddingTop="0dp"
         android:paddingBottom="0dp"
-        android:text="@string/done"
         app:backgroundTint="@null" />
 </LinearLayout>
