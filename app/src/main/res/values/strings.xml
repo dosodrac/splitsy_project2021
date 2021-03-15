@@ -1,4 +1,4 @@
-<resources >
+<resources>
     <string name="app_name">Splitsy</string>
     <string name="diamond_shape">Diamond_shape</string>
     <string name="sign_in">Sign In</string>
@@ -44,7 +44,6 @@
     <string name="_0000_0000">0000–0000</string>
     <string name="qr_code">QR code</string>
     <string name="your_bill">Your Bill</string>
-    <string name="your_section_of_the_bill_is">Your section of the bill is</string>
     <string name="_00_00">£00.00</string>
     <string name="we_will_notify_you_when_you_have_been_paid_back_by_each">We will notify you when you have been paid back by each</string>
     <string name="view_bill_details">View Bill Details</string>
@@ -113,7 +112,6 @@
     <string name="quantity">Quantity</string>
     <string name="david_dinner_bill">David Dinner Bill</string>
     <string name="price">Price</string>
-    <string name="pay">Pay</string>
     <string name="sushi">Sushi</string>
     <string name="_1">1</string>
     <string name="_16_75">£16.75</string>
@@ -145,6 +143,44 @@
     <string name="you_have_successfully_updated_your_password_well_done">You\'ve successfully updated your password, well done!</string>
     <string name="you_have_successfully_added_a_new_bank_card_well_done">You\'ve successfully added a new bank card, well done!</string>
     <string name="bank_card_added">Bank card added</string>
+    <string name="so_your_section_of_the_bill_is">so your section of the bill is</string>
+    <string name="_10_00">£ 10.00</string>
+    <string name="there_are">There are</string>
+    <string name="_3">3</string>
+    <string name="_0_00">£ 0.00</string>
+    <string name="the_pay_by_date_for_this_bill_is">The pay-by date for this bill is</string>
+    <string name="members_in_the_bill">members in the bill,</string>
+    <string name="pay_later">Pay Later</string>
+    <string name="pay_now">Pay Now</string>
+    <string name="the_total_bill_amount_is">The total bill amount is</string>
+    <string name="_11_01_2021">11/01/2021</string>
+    <string name="_00_00_00">00/00/00</string>
+    <string name="card_payments_will_only_be_processed_once_all_members_have_completed_selection">Card payments will only be processed once all members have completed selection</string>
+    <string name="_10_25">£10.25</string>
+    <string name="_30_45">£30.45</string>
+    <string name="description">Description</string>
+    <string name="_6_80">£6.80</string>
+    <string name="your_amount">Your amount</string>
+    <string name="_5">5</string>
+    <string name="members">Members</string>
+    <string name="total_amount">Total amount</string>
+    <string name="_28_04_21">28/04/21</string>
+    <string name="_26_80">£26.80</string>
+    <string name="your_section_of_the_bill_is">Your section of the bill is</string>
+    <string name="payment_accepted">Payment Accepted!</string>
+    <string name="congrats_you_weren_t_the_last_one">Congrats! You weren\'t the last one!</string>
+    <string name="your_payment_has_been_accepted_and_will_be_processed_once_all_of_the_items_have_been_selected">Your payment has been accepted and will be processed once all of the items have been selected</string>
+    <string name="better_late_then_never">Better late then never</string>
+    <string name="we_ll_notify_you_once_your_payment_has_been_processed">We\'ll notify you once your payment has been processed</string>
+    <string name="payment_pending">Payment Pending</string>
+    <string name="this_payment_is_pending_via_the_creators_confirmation">This payment is pending via the creators confirmation</string>
+    <string name="we_ll_notify_you_once_your_payment_has_been_confirmed">We\'ll notify you once your payment has been confirmed</string>
+    <string name="fingers_crossed">Fingers crossed</string>
+    <string name="pay">Pay</string>
+    <string name="scan_your_finger_print_to_confirm_payment">Scan your finger print to confirm payment</string>
+    <string name="cash">Cash</string>
+    <string name="payment_options">Payment Options</string>
+    <string name="_0000">0000</string>
 
 
     <!-- Spiner on new bill page-->

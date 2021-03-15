@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class YourBillCreator extends AppCompatActivity {
+public class PaymentPending extends AppCompatActivity {
 
     Button homebtn; // home button
     Button billdetailbtn; // bill details button
@@ -15,14 +15,14 @@ public class YourBillCreator extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_your_bill_creator);
+        setContentView(R.layout.activity_payment_pending);
 
         // home button code
         homebtn = (Button)findViewById(R.id.homeButton);
         homebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(YourBillCreator.this, New_Bill.class));
+                startActivity(new Intent(PaymentPending.this, New_Bill.class));
             }
         });// end home button code
 
@@ -30,10 +30,8 @@ public class YourBillCreator extends AppCompatActivity {
         billdetailbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(YourBillCreator.this, BillDetail.class));
+                startActivity(new Intent(PaymentPending.this, BillDetail.class));
             }
         });
-
-
     }
 }

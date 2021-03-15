@@ -91,7 +91,7 @@ public class CreateNewBill extends AppCompatActivity {
         createbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+              
                 if (equallySelected) {
                     startActivity(new Intent(CreateNewBill.this, EnterBillDetails.class));
                 }
@@ -99,6 +99,7 @@ public class CreateNewBill extends AppCompatActivity {
                 else if (byItemSelected) {
                     startActivity(new Intent(CreateNewBill.this, ScanYourReceipt.class));
                 }
+
             }
         });// end of create new bill button-----
     }
