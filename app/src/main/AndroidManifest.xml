@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".CheckItems"></activity>
+        <activity android:name=".BankCardAdded"></activity>
+        <activity android:name=".PasswordChanged" />
+        <activity android:name=".EmailChanged" />
+        <activity android:name=".AddNewCard" />
+        <activity android:name=".ChangePassword" />
+        <activity android:name=".ChangeEmail" />
+        <activity android:name=".Settings" />
+        <activity android:name=".CheckItems" />
         <activity android:name=".SelectItems" />
         <activity android:name=".CameraPermission" />
         <activity android:name=".ScanYourReceipt" />
