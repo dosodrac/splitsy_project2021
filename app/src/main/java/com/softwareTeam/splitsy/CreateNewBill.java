@@ -47,7 +47,7 @@ public class CreateNewBill extends AppCompatActivity {
         createbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(CreateNewBill.this, EnterBillDetails.class));
+                startActivity(new Intent(CreateNewBill.this, EnterBillDetails.class));
                 //startActivity(new Intent(CreateNewBill.this, ScanYourReceipt.class));
             }
         });// end of create new bill button-----

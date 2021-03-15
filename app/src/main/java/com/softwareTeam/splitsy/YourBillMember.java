@@ -11,14 +11,15 @@ import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class EnterBillDetails extends AppCompatActivity {
+public class YourBillMember extends AppCompatActivity {
 
-    Button createbtn; // enter bill details button create
+    Button paynowbtn; // pay now button
+    Button paylaterbtn; // pay later button
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_enter_bill_details);
+        setContentView(R.layout.activity_your_bill_member);
 
         // ---------Bottom navigation code
         BottomNavigationView bottomNavigationView = findViewById(R.id.nav_bottom);
@@ -29,26 +30,35 @@ public class EnterBillDetails extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
                     case R.id.pastBills:
-                        startActivity(new Intent(EnterBillDetails.this, Past_Bills.class));
+                        startActivity(new Intent(YourBillMember.this, Past_Bills.class));
                         return true;
                     case R.id.newBill:
-                        startActivity(new Intent(EnterBillDetails.this, New_Bill.class));
+                        startActivity(new Intent(YourBillMember.this, New_Bill.class));
                         return true;
                     case R.id.account:
-                        startActivity(new Intent(EnterBillDetails.this, Your_Account.class));
+                        startActivity(new Intent(YourBillMember.this, Your_Account.class));
                         return true;
                 }
                 return false;
             }
         });// --------end of Botton navigation
 
-        //----create button------
-        createbtn = (Button) findViewById(R.id.createButton);
-        createbtn.setOnClickListener(new View.OnClickListener() {
+        // ---- pay now button-----
+        paynowbtn = (Button)findViewById(R.id.payNowButton);
+        paynowbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EnterBillDetails.this,ShareCode.class));
+                startActivity(new Intent(YourBillMember.this, Pay.class));
             }
-        });  // ---end of create button-----
+        });
+
+        // ---- pay later button----
+        paylaterbtn = (Button)findViewById(R.id.payLaterButton);
+        paylaterbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(YourBillMember.this, PaymentPending.class));
+            }
+        });
     }
 }
