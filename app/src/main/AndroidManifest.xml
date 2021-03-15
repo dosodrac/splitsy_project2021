@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".BankCardAdded"></activity>
+        <activity android:name=".BankCardAdded" />
         <activity android:name=".PasswordChanged" />
         <activity android:name=".EmailChanged" />
         <activity android:name=".AddNewCard" />
