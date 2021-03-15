@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -43,7 +44,12 @@ public class EnterBillDetails extends AppCompatActivity {
 
         //----create button------
         createbtn = (Button) findViewById(R.id.createButton);
-        startActivity(new Intent(EnterBillDetails.this,ShareCode.class));
+        createbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(EnterBillDetails.this,ShareCode.class));
+            }
+        });
         // ---end of create button-----
     }
 }
