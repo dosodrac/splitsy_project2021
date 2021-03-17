@@ -181,6 +181,10 @@
     <string name="cash">Cash</string>
     <string name="payment_options">Payment Options</string>
     <string name="_0000">0000</string>
+    <string name="i_acknowledge_that_by_joining_this_bill_i_owe_the_creator_a_section_of_this_bill">I acknowledge that by joining this bill I owe the creator a section of this bill</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="hiphon">-</string>
+    <string name="i_also_acknowledge_that_if_i_don_t_pay_the_creator_back_before_the_pay_by_date_00_00_00_payment_will_be_made_automatically_using_the_bank_details_i_have_provided">I also acknowledge that if I don\'t pay the creator back before the Pay-by date, 00/00/00, payment will be made automatically using the bank details I have provided</string>
 
 
     <!-- Spiner on new bill page-->
