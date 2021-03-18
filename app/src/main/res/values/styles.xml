@@ -4,4 +4,19 @@
         <item name="android:layout_width">109dp</item>
         <item name="android:layout_height">169dp</item>
     </style>
+
+    <style name="check">
+        <item name="android:layout_width">254dp</item>
+        <item name="android:layout_height">53dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">36dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:buttonTint">@color/logoGreen</item>
+        <item name="android:checked">false</item>
+        <item name="android:hapticFeedbackEnabled">false</item>
+        <item name="android:shadowColor">@color/logoGreen</item>
+        <item name="android:textColorHighlight">@color/logoGreen</item>
+        <item name="android:textColorLink">@color/logoGreen</item>
+    </style>
 </resources>

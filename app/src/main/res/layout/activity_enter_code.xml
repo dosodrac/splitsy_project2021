@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterCode">
+
+    <TextView
+        android:id="@+id/entercodeTxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_code"
+        android:textColor="@color/logoGreen"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114"
+        />
+    <TableRow
+        android:id="@+id/tableRowcode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entercodeTxt1"
+        app:layout_constraintVertical_bias="0.034">
+
+        <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/format_input_box"
+        android:ems="10"
+        android:inputType="number" />
+
+        <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="30dp"
+        android:layout_height="match_parent"
+        android:background="@drawable/format_input_box"
+        android:ems="10"
+        android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hiphon"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNumber3"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/format_input_box"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber4"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/format_input_box"
+            android:ems="10"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="35dp"
+            android:layout_height="wrap_content"
+            android:text="@string/hiphon"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextNumber7"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/format_input_box"
+            android:ems="10"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextNumber8"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/format_input_box"
+            android:ems="10"
+            android:inputType="number" />
+
+
+    </TableRow>
+
+    <CheckBox
+        android:id="@+id/acceptTerms"
+        android:layout_width="296dp"
+        android:layout_height="63dp"
+        android:text="@string/i_acknowledge_that_by_joining_this_bill_i_owe_the_creator_a_section_of_this_bill"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:buttonTint="@color/logoGreen"
+        android:checked="false"
+        android:hapticFeedbackEnabled="false"
+        android:textColorHighlight="@color/logoGreen"
+        android:textColorLink="@color/logoGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.573"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableRowcode"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        android:id="@+id/nextcontext"
+        android:layout_width="259dp"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:paddingStart="6dp"
+        android:paddingEnd="6dp"
+        android:text="@string/i_also_acknowledge_that_if_i_don_t_pay_the_creator_back_before_the_pay_by_date_00_00_00_payment_will_be_made_automatically_using_the_bank_details_i_have_provided"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.572"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptTerms"
+        app:layout_constraintVertical_bias="0.027" />
+
+    <Button
+        android:id="@+id/continuebtn"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:background="@drawable/format_button"
+        android:text="@string/continue1"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acceptTerms" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/logoGreen"
+        app:itemIconTint="@color/white"
+        app:itemTextColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:menu="@menu/nav_bar">
+
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</androidx.constraintlayout.widget.ConstraintLayout>
