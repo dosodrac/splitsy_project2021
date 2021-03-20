@@ -49,9 +49,9 @@ public class Sign_In extends AppCompatActivity {
                 if (validate()==true){
                     startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
                 }
-                else {
-                    info.setText("There was an error, please try again.");
-                }
+//                else {
+//                    info.setText("There was an error, please try again.");
+//                }
                 //startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
             }
         });// end sign in button------------------------
@@ -103,11 +103,13 @@ public class Sign_In extends AppCompatActivity {
             String password = passwordInput.getText().toString();
 
             while(resultSet.next()) {
+                info.setText("email found");
                 if(resultSet.getString(3).equals(password)){
                     //Intent i = new Intent(MainActivity.this,Account.class);
                     //startActivity(i);
 
                     //startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
+                    info.setText("password right");
                     return true;
                 }
 //                else{
@@ -117,7 +119,7 @@ public class Sign_In extends AppCompatActivity {
             }
             return false;
         }catch(Exception e){
-            info.setText("There was an error, please try again.");
+            info.setText(e.toString());
             return false;
 
         }
