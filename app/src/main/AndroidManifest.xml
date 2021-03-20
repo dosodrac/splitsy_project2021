@@ -44,6 +44,7 @@
         <activity android:name=".Past_Bills" />
         <activity android:name=".New_Bill" />
         <activity android:name=".Enable_Fingerprint" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".Sign_In">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
