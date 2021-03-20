@@ -12,11 +12,12 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+//import java.sql.PreparedStatement;
+//import java.sql.ResultSet;
+//import java.sql.Statement;
 
 public class Sign_In extends AppCompatActivity {
 
@@ -156,6 +157,5 @@ public class Sign_In extends AppCompatActivity {
 //            return null;
 //        }
 //    }
-
 
 }
