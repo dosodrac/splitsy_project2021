@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 
@@ -45,7 +46,12 @@ public class Sign_In extends AppCompatActivity {
         btnsingIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new Task().execute();
+                if (validate()==true){
+                    startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
+                }
+                else {
+                    info.setText("There was an error, please try again.");
+                }
                 //startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
             }
         });// end sign in button------------------------
@@ -83,41 +89,71 @@ public class Sign_In extends AppCompatActivity {
                 startActivity(new Intent(Sign_In.this, ForgotPassword.class));
             }
         });// --------------end of forgot links-----------------
-
     }
 
-    class Task extends AsyncTask<Void, Void, Void> {
-        /* String records = "", error=""; */
+    private boolean validate(){
+        try{
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
+            Statement statement = connection.createStatement();
+            PreparedStatement ps = connection.prepareStatement("SELECT * FROM user WHERE email=?");
+            ps.setString(1, emailInput.getText().toString());
+            ResultSet resultSet = ps.executeQuery();
 
-        @SuppressLint("SetTextI18n")
-        @Override
-        protected Void doInBackground(Void... voids){
-            try{
-                Class.forName("com.mysql.jdbc.Driver");
-                Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery("SELECT * FROM user WHERE email='" + emailInput + "'");
+            String password = passwordInput.getText().toString();
 
-                String password = passwordInput.getText().toString();
+            while(resultSet.next()) {
+                if(resultSet.getString(3).equals(password)){
+                    //Intent i = new Intent(MainActivity.this,Account.class);
+                    //startActivity(i);
 
-                while(resultSet.next()) {
-                    if(resultSet.getString(3).equals(password)){
-                        //Intent i = new Intent(MainActivity.this,Account.class);
-                        //startActivity(i);
-
-                        startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
-                    }
-                    else{
-                        info.setText("There was an error, please try again");
-                        startActivity(new Intent(Sign_In.this, Sign_In.class));
-                    }
+                    //startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
+                    return true;
                 }
-            }catch(Exception e){
-                info.setText("There was an error, please try again.");
+//                else{
+//                    info.setText("There was an error, please try again");
+//                    //startActivity(new Intent(Sign_In.this, Sign_In.class));
+//                }
             }
-            return null;
+            return false;
+        }catch(Exception e){
+            info.setText("There was an error, please try again.");
+            return false;
+
         }
     }
+
+//    class Validate extends AsyncTask<Void, Void, Void> {
+//
+//        @SuppressLint("SetTextI18n")
+//        @Override
+//        protected Void doInBackground(Void... voids){
+//            try{
+//                Class.forName("com.mysql.jdbc.Driver");
+//                Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
+//                Statement statement = connection.createStatement();
+//                ResultSet resultSet = statement.executeQuery("SELECT * FROM user WHERE email='" + emailInput + "'");
+//
+//                String password = passwordInput.getText().toString();
+//
+//                while(resultSet.next()) {
+//                    if(resultSet.getString(3).equals(password)){
+//                        //Intent i = new Intent(MainActivity.this,Account.class);
+//                        //startActivity(i);
+//
+//                        startActivity(new Intent(Sign_In.this, Enable_Fingerprint.class));
+//                    }
+//                    else{
+//                        info.setText("There was an error, please try again");
+//                        startActivity(new Intent(Sign_In.this, Sign_In.class));
+//                    }
+//                }
+//            }catch(Exception e){
+//                info.setText("There was an error, please try again.");
+//            }
+//            return null;
+//        }
+//    }
 
 
 }
