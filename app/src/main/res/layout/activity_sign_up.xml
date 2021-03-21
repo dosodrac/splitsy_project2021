@@ -86,6 +86,7 @@
         android:textAllCaps="false"
         android:textSize="15sp"
         app:backgroundTint="@null"
+        android:onClick="btnConn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
