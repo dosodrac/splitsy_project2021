@@ -28,7 +28,7 @@ public class UtilsTest {
     @Test
     public void validatePassword_Null() {
         // setup
-        String password = null;
+        String password = "fasdf";
 
         // execute
         boolean actual = Utils.validatePassword(password);
