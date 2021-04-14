@@ -64,13 +64,13 @@ public class SignUp extends AppCompatActivity {
     }
 
 
-    class Async extends AsyncTask<Void, Void, String> {
+    class Async extends AsyncTask<Void, Void, Void> {
         String txtEmail = editEmail.getText().toString();
         String txtPassword = editPassword.getText().toString();
         String msg="";
 
         @Override
-        protected String doInBackground(Void... voids) {
+        protected Void doInBackground(Void... voids) {
             if (txtEmail.trim().equals("") || txtPassword.trim().equals(""))
                 msg = "Please enter all fields";
 
@@ -91,26 +91,23 @@ public class SignUp extends AppCompatActivity {
 
                     if (rows > 0) {
 
-                        startActivity(new Intent(SignUp.this, Sign_In.class));
+                        startActivity(new Intent(SignUp.this, AccountDetails.class));
                         msg = " Success";
                     }
                     connection.close();
 
                 } catch (Exception e) {
                     info.setText("Please try again!");
-                    e.toString();
-                }}
-            return msg;
+                }
+            }
+            return null;
         }
 
         @Override
-        protected void onPostExecute(String aVoid) {
+        protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             info.setText(msg);
 
         }
     }
-
-
-
 }
