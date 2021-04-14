@@ -34,7 +34,7 @@
         <activity android:name=".ForgotPassword" />
         <activity android:name=".EnterCardDetails" />
         <activity android:name=".AccountDetails" />
-        <activity android:name=".SignUp" />
+        <activity android:name=".Sign_In" />
         <activity android:name=".FilterMenu" />
         <activity android:name=".YourBillCreator" />
         <activity android:name=".ShareCode" />
@@ -45,7 +45,7 @@
         <activity android:name=".New_Bill" />
         <activity android:name=".Enable_Fingerprint" />
         <activity android:name=".MainActivity" />
-        <activity android:name=".Sign_In">
+        <activity android:name=".SignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

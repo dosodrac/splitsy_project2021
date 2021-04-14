@@ -9,27 +9,48 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.sql.*;
 
 public class MainActivity extends AppCompatActivity {
     TextView text,errorText;
     Button show;
+
+
+    Button go;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         text = (TextView) findViewById(R.id.testText1);
         errorText = (TextView) findViewById(R.id.noErrorTextText2);
+
+
+
+        go=findViewById(R.id.go);
+        go.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, Sign_In.class));
+            }
+        });
+
+
         show = (Button) findViewById(R.id.button);
+
         show.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new Async().execute();
+                new Async1().execute();
             }
         });
     }
 
-    class Async extends AsyncTask<Void, Void, Void> {
+
+    class Async1 extends AsyncTask<Void, Void, Void> {
 
         String records = "",error="";
         @Override
@@ -39,10 +60,11 @@ public class MainActivity extends AppCompatActivity {
                 Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery("SELECT email FROM user");
-
                 while(resultSet.next()) {
-                    records += resultSet.getString(1) + " " + resultSet.getString(2) + "\n";
+                    records += resultSet.getString(1) + "\n";
+
                 }
+
             }
             catch(Exception e)
             {
