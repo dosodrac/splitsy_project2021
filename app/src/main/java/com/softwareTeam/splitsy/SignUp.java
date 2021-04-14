@@ -19,7 +19,7 @@ public class SignUp extends AppCompatActivity {
 
     Button continuebtn; // continue botton
     TextView signin; //sign in link
-    
+
     //regiseter
     EditText editEmail,editPassword;
     TextView info;
