@@ -23,7 +23,7 @@ public class SignUp extends AppCompatActivity {
     //regiseter
     EditText editEmail,editPassword;
     TextView info;
-
+   //btn
     Button btn;
 
 
