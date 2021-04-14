@@ -15,7 +15,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.09"
-        app:srcCompat="@drawable/logo"/>
+        app:srcCompat="@drawable/logo" />
 
 
     <TextView
@@ -29,8 +29,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logoImage"
-        app:layout_constraintVertical_bias="0.062"
-        />
+        app:layout_constraintVertical_bias="0.062" />
 
     <TextView
         android:id="@+id/passwordText"
@@ -44,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailInput"
-        app:layout_constraintVertical_bias="0.066"/>
+        app:layout_constraintVertical_bias="0.066" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -69,12 +68,12 @@
             android:ems="10"
             android:inputType="textPassword"
             android:labelFor="@id/textInputLayout"
-            android:hint="@string/password"
-            android:textColorHint="@color/white"
             android:paddingTop="0dp"
             android:paddingBottom="0dp"
-            android:shadowColor="#000000"/>
+            android:shadowColor="#000000"
+            android:textColorHint="@color/white" />
     </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/accountContinueButton"
@@ -91,7 +90,22 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/termsAndConditionsCB"
-        app:layout_constraintVertical_bias="0.096"/>
+        app:layout_constraintVertical_bias="0.096" />
+
+    <!--<Button
+        android:id="@+id/ok"
+        android:layout_width="170dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="48dp"
+        android:text="ok"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
+        app:layout_constraintVertical_bias="0.096" />
+        -->
 
     <EditText
         android:id="@+id/emailInput"
@@ -100,17 +114,18 @@
         android:layout_marginBottom="224dp"
         android:background="@drawable/format_input_box"
         android:ems="10"
+        android:hint="@string/example_splitsy_com"
         android:inputType="textEmailAddress"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
-        android:hint="@string/example_splitsy_com"
         android:textColorHint="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.441"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailText"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.0" />
+
 
     <TextView
         android:id="@+id/emailText"
@@ -125,14 +140,14 @@
         app:layout_constraintHorizontal_bias="0.135"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signUpText"
-        app:layout_constraintVertical_bias="0.043"/>
+        app:layout_constraintVertical_bias="0.043" />
 
     <CheckBox
         android:id="@+id/termsAndConditionsCB"
         android:layout_width="330dp"
         android:layout_height="39dp"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="220dp"
         android:background="@color/white"
         android:backgroundTint="@color/white"
         android:buttonTint="@color/logoGreen"
@@ -144,7 +159,7 @@
         android:textColorLink="@color/logoGreen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintHorizontal_bias="0.438"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
         app:layout_constraintVertical_bias="0.0" />
@@ -161,7 +176,7 @@
         app:layout_constraintHorizontal_bias="0.368"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
-        app:layout_constraintVertical_bias="0.507"/>
+        app:layout_constraintVertical_bias="0.507" />
 
     <TextView
         android:id="@+id/signInLink"
@@ -177,8 +192,24 @@
         app:layout_constraintHorizontal_bias="0.062"
         app:layout_constraintStart_toEndOf="@+id/accountLink"
         app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
-        app:layout_constraintVertical_bias="0.503"/>
+        app:layout_constraintVertical_bias="0.503" />
 
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/accountLink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.429"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accountContinueButton"
+        app:layout_constraintVertical_bias="0.316" />" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
