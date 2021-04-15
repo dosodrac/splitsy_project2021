@@ -76,6 +76,7 @@
         android:labelFor="@+id/emailText"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
+        android:maxLength="70"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.486"
@@ -124,6 +125,7 @@
                 android:labelFor="@id/textInputLayout"
                 android:paddingTop="0dp"
                 android:paddingBottom="0dp"
+                android:maxLength="50"
                 android:shadowColor="#000000"/>
     </com.google.android.material.textfield.TextInputLayout>
 
