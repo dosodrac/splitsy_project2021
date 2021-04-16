@@ -59,7 +59,7 @@ public class ScanYourReceipt extends AppCompatActivity {
         photoimglink.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ScanYourReceipt.this, CameraPermission.class));
+                startActivity(new Intent(ScanYourReceipt.this, CameraAPI.class));
             }
         });// ----------------end link code------------------
 

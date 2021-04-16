@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.softwareTeam.splitsy">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-feature android:name="android.hardware.camera.any" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
 
     <application
         android:allowBackup="true"
@@ -10,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Splitsy">
-        <activity android:name=".EnterCode"></activity>
+        <activity android:name=".ScanYourReceipt"/>
+        <activity android:name=".EnterCode" />
         <activity android:name=".PaymentPending" />
         <activity android:name=".PaymentAccepted" />
         <activity android:name=".Pay" />
@@ -28,7 +35,7 @@
         <activity android:name=".CheckItems" />
         <activity android:name=".SelectItems" />
         <activity android:name=".CameraPermission" />
-        <activity android:name=".ScanYourReceipt" />
+        <activity android:name=".CameraAPI" />
         <activity android:name=".BiometricSignIn" />
         <activity android:name=".EmailSent" />
         <activity android:name=".ForgotPassword" />
