@@ -17,16 +17,14 @@ import java.sql.PreparedStatement;
 
 public class SignUp extends AppCompatActivity {
 
-    Button continuebtn; // continue botton
+    Button continuebtn; // continue button
     TextView signin; //sign in link
 
-    //regiseter
+    //register
     EditText editEmail,editPassword;
     TextView info;
-   //btn
+    //btn
     Button btn;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,11 +35,8 @@ public class SignUp extends AppCompatActivity {
         editPassword = findViewById(R.id.passwordInput);
         info = findViewById(R.id.message);
 
-
         //----------continue button-------------
         continuebtn = (Button) findViewById(R.id.accountContinueButton);
-
-
         continuebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,38 +54,30 @@ public class SignUp extends AppCompatActivity {
                 startActivity(new Intent(SignUp.this, Sign_In.class));
             }
         });
-
-
     }
 
 
     class Async extends AsyncTask<Void, Void, Void> {
         String txtEmail = editEmail.getText().toString();
         String txtPassword = editPassword.getText().toString();
-        String msg="";
+        String msg = "";
 
         @Override
         protected Void doInBackground(Void... voids) {
             if (txtEmail.trim().equals("") || txtPassword.trim().equals(""))
                 msg = "Please enter all fields";
-
             else {
-
                 try {
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
                     String sql = "INSERT INTO user(email,password) VALUES(?,?)";
 
                     PreparedStatement statement = connection.prepareStatement(sql);
-
                     statement.setString(1, editEmail.getText().toString());
                     statement.setString(2, editPassword.getText().toString());
 
-
                     int rows = statement.executeUpdate();
-
                     if (rows > 0) {
-
                         startActivity(new Intent(SignUp.this, AccountDetails.class));
                         msg = " Success";
                     }
@@ -107,7 +94,6 @@ public class SignUp extends AppCompatActivity {
         protected void onPostExecute(Void aVoid) {
             super.onPostExecute(aVoid);
             info.setText(msg);
-
         }
     }
 }
