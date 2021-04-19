@@ -68,6 +68,7 @@ public class SignUp extends AppCompatActivity {
                 msg = "Please enter all fields";
             else {
                 try {
+                    //jdbc class
                     Class.forName("com.mysql.jdbc.Driver");
                     Connection connection = DriverManager.getConnection("jdbc:mysql://igor.gold.ac.uk:3307/dcard001_splitsy", "dcard001", "134114");
                     String sql = "INSERT INTO user(email,password) VALUES(?,?)";
