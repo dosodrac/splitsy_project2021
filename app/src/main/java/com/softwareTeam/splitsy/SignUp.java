@@ -74,6 +74,7 @@ public class SignUp extends AppCompatActivity {
                     String sql = "INSERT INTO user(email,password) VALUES(?,?)";
 
                     PreparedStatement statement = connection.prepareStatement(sql);
+                    //inserting data into database
                     statement.setString(1, editEmail.getText().toString());
                     statement.setString(2, editPassword.getText().toString());
 
