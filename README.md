@@ -5,6 +5,8 @@ We built this Android application using Java, MySQL, and XML in Android Studio. 
 
 This project involved planning, research, prototyping and system development through the use of Agile and Scrum.
 
+-----
+
 ## Table of contents
 * [User Guide](#user-guide)
 * [APK](#apk)
@@ -26,6 +28,7 @@ https://mega.nz/file/ePZUnDbR#ocgukhCqYPotd7pbLTEDmylXpOfXTJNeyMz9PY3L8hA
 ## Screenshots
 <img src="https://user-images.githubusercontent.com/57752800/137224473-e30f5815-e143-4458-b4a8-cf101da11b5e.png" width="30%"></img> 
 <img src="https://user-images.githubusercontent.com/57752800/137224483-763fdb6e-2ad8-4af8-87df-44329f857740.png" width="30%"></img> 
+<img src="https://user-images.githubusercontent.com/57752800/137276249-c6a1af09-fa42-460f-8300-5649de86aa92.png" width="30%"></img>
 <img src="https://user-images.githubusercontent.com/57752800/137224485-7141f8b3-1888-4a73-9d8c-fff78c4ae1d0.png" width="30%"></img> 
 <img src="https://user-images.githubusercontent.com/57752800/137224494-92304c13-2ef6-4ae6-887d-8b1103e36a29.png" width="30%"></img> 
 <img src="https://user-images.githubusercontent.com/57752800/137224515-ffbdf776-2d13-4182-b3e0-8b2e5d5ed242.png" width="30%"></img>
