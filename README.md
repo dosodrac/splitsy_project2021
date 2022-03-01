@@ -1,6 +1,6 @@
 # Splitsy Project (2021)
 
-In a world now focusing on privacy, we have noticed a lack of bill splitting applications that are privacy orientated. So we developed the first working prototype of our application ‘Splitsy’, designed to allow users to split bills without sharing bank account information while ensuring payments are not forgotten.
+In a world now focusing on privacy, myself and a group of students have noticed a lack of bill splitting applications that are privacy orientated. So we developed the first working prototype of our application ‘Splitsy’, designed to allow users to split bills without sharing bank account information while ensuring payments are not forgotten.
 We built this Android application using Java, MySQL, and XML in Android Studio. Other technologies were implemented to allow for efficient integration between these aspects. During development we used Agile methodology to ensure our product could be tested as thoroughly as possible. 
 
 This project involved planning, research, prototyping and system development through the use of Agile and Scrum.
